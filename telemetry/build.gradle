@@ -30,6 +30,12 @@ neoForge {
             client()
             systemProperty 'stratosworn.telemetry.port', '25590'
         }
+        // Same client, but auto-joins the local test server so the in-world MCP tools can be exercised headlessly.
+        clientJoin {
+            client()
+            systemProperty 'stratosworn.telemetry.port', '25590'
+            programArguments.addAll '--quickPlayMultiplayer', '127.0.0.1:25565'
+        }
         configureEach {
             systemProperty 'forge.logging.markers', 'REGISTRIES'
             logLevel = org.slf4j.event.Level.INFO
