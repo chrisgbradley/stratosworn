@@ -1,2 +1,11 @@
 hash-format = "sha256"
-files = []
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
+metafile = true
+
+[[files]]
+file = "mods/stratosworn-telemetry.pw.toml"
+hash = "7254f11450c9c4818e5de81391e8ea2c642c8f06be48c0d4125c171cfa5f1c63"
+metafile = true
