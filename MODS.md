@@ -11,3 +11,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Curios API | 9.5.1+1.21.1 | both | Dependency of Ars Nouveau (equipment slots). |
 | GeckoLib | 4.9.2 | both | Dependency of Ars Nouveau (animated models). |
 | Ars Nouveau | 5.13.1 (ars_nouveau-1.21.1-5.13.1.jar) | both | The magic tree. Glyphs, source, rituals. |
+| EMI | 1.1.24 (emi-1.1.24+1.21.1+neoforge.jar) | both | Recipe viewer. Release builds on 1.21.1 NeoForge; JEI is beta-only there. |
