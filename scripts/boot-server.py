@@ -26,7 +26,16 @@ def install():
         print(f"[boot] installer failed ({r.returncode})")
         sys.exit(2)
 
+def port_busy(port=25565):
+    import socket
+    with socket.socket() as s:
+        s.settimeout(0.5)
+        return s.connect_ex(("127.0.0.1", port)) == 0
+
 def boot(timeout):
+    if port_busy():
+        print("[boot] port 25565 is already in use (detached test server running?). Stop it first: python scripts/rcon.py stop")
+        sys.exit(3)
     log = SERVER / "logs" / "latest.log"
     if log.exists():
         log.unlink()
