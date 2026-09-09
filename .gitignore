@@ -1,0 +1,25 @@
+# packwiz / pack working dirs
+/server/
+/client-test/
+/build/
+/exports/
+*.log
+
+# telemetry mod build outputs
+/telemetry/build/
+/telemetry/.gradle/
+/telemetry/run/
+/telemetry/runs/
+/telemetry/.idea/
+/telemetry/*.iml
+/telemetry/bin/
+/telemetry/.settings/
+/telemetry/.classpath
+/telemetry/.project
+/telemetry/eclipse/
+/telemetry/repl_port
+/telemetry/.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
