@@ -4,6 +4,7 @@ Every mod add, config change, and why. Newest first.
 
 ## 0.1.0 (in progress)
 
+- 2026-09-09: Shipped `config/DistantHorizons.toml` with `lodChunkRenderDistanceRadius = 128` (DH default is 256). Matches the brief's target of 16 render + DH 128 and halves LOD memory and generation load.
 - 2026-09-09: Added Distant Horizons 3.2.0-b, `side = "client"` (packwiz defaulted to both because Modrinth marks it optional/optional). Loaded on the dev client alongside Create, Aeronautics, Ars, Tectonic, Terralith; joined the local server clean.
 - 2026-09-09: Local server: `ops.json` grants the dev client's offline player `Dev` op so `run_command` and remote tick sampling work; RCON enabled on 25575 (local password in `server.properties`, git-ignored) so `scripts/rcon.py stop` can stop the detached server.
 - 2026-09-09: Telemetry `recipe_lookup` now classifies makes/uses from the vanilla result item when known, and parses only result-keyed JSON for modded recipes. Previously a brass-nugget recipe was filed under brass-ingot makes.
