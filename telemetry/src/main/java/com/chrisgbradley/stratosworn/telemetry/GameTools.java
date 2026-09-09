@@ -172,7 +172,7 @@ public final class GameTools {
         Minecraft mc = Minecraft.getInstance();
         JsonObject o = new JsonObject();
         o.addProperty("fps", mc.getFps());
-        o.addProperty("frame_time_ms", round2(averageMs(mc.getDebugOverlay().getFrameTimeLogger(), 100)));
+        o.addProperty("frame_time_ms", round2(mc.getFrameTimeNs() / 1_000_000.0));
 
         MinecraftServer integrated = mc.getSingleplayerServer();
         if (integrated != null) {
