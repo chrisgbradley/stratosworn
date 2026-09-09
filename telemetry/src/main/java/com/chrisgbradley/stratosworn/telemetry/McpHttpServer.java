@@ -44,7 +44,8 @@ public final class McpHttpServer {
             t.setDaemon(true);
             return t;
         });
-        this.http = HttpServer.create(new InetSocketAddress(InetAddress.getLoopbackAddress(), port), 8);
+        // Literal IPv4 loopback: getLoopbackAddress() can resolve to ::1, which a 127.0.0.1 client cannot reach.
+        this.http = HttpServer.create(new InetSocketAddress(InetAddress.getByName("127.0.0.1"), port), 8);
         this.http.createContext("/mcp", this::handle);
         this.http.setExecutor(pool);
     }

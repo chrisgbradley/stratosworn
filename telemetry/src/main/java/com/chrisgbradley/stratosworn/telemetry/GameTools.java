@@ -201,7 +201,7 @@ public final class GameTools {
             o.addProperty("dimension", level.dimension().location().toString());
         }
         o.addProperty("render_distance", mc.options.renderDistance().get());
-        o.addProperty("renderer", mc.levelRenderer.getSectionStatistics());
+        if (level != null) o.addProperty("renderer", mc.levelRenderer.getSectionStatistics());
         o.addProperty("window", mc.getWindow().getWidth() + "x" + mc.getWindow().getHeight());
         o.addProperty("screen", mc.screen == null ? null : mc.screen.getClass().getName());
         return o;

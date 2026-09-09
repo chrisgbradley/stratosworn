@@ -1,6 +1,11 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/ars-nouveau.pw.toml"
+hash = "8a857077b98b950607b66b0c4fec557f214190dd6657d5fc49cc3b8540126b5b"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "3b8895369640b2a52d3e05f7186185ba6798e44d513f11c5427a0fe9c16769e9"
 metafile = true
@@ -8,6 +13,16 @@ metafile = true
 [[files]]
 file = "mods/create.pw.toml"
 hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "5a26489b734991c0511abfe43bf9143c935b8483d854a78fecd2e84993fb09cc"
 metafile = true
 
 [[files]]
