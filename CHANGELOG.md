@@ -4,6 +4,7 @@ Every mod add, config change, and why. Newest first.
 
 ## 0.1.0 (in progress)
 
+- 2026-09-09: Added EMI 1.1.24, then Tectonic 3.0.26 (+ Lithostitched dependency). Both boot green. Tectonic alone first; Terralith pairing tested next.
 - 2026-09-09: Added Sable 2.0.5, Create Aeronautics 1.3.2, Curios 9.5.1, GeckoLib 4.9.2, Ars Nouveau 5.13.1. Each booted green. Ars Nouveau declares Curios and GeckoLib as mandatory even though Modrinth lists no dependencies for it.
 - 2026-09-09: Added Create 6.0.10. Server boot green (41s, 0 ERROR). Ponder refmap WARN is expected outside dev.
 - 2026-09-09: Local server config: `online-mode=false` so the Gradle dev client can join; view-distance 10; seed `stratosworn`. Local JVM: 6G heap, G1GC (Aikar flags). Production host args are an open question.
