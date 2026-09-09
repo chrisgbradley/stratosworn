@@ -182,7 +182,8 @@ public final class GameTools {
         } else if (mc.getConnection() != null) {
             // Ask the remote server for tick samples; they arrive over the next few ticks.
             mc.getConnection().send(new ServerboundDebugSampleSubscriptionPacket(RemoteDebugSampleType.TICK_TIME));
-            double ms = averageMs(mc.getDebugOverlay().getTickTimeLogger(), 100);
+            // dimension 1 = SERVER_TICK (work only); dimension 0 is the full 50 ms tick including idle
+            double ms = averageMs(mc.getDebugOverlay().getTickTimeLogger(), 100, 1);
             o.addProperty("server_tick_ms", ms > 0 ? round2(ms) : null);
             o.addProperty("server_kind", "remote");
             if (ms <= 0) o.addProperty("server_tick_note", "subscribed to tick samples; call perf again in ~1s");
@@ -205,15 +206,17 @@ public final class GameTools {
         if (level != null) o.addProperty("renderer", mc.levelRenderer.getSectionStatistics());
         o.addProperty("window", mc.getWindow().getWidth() + "x" + mc.getWindow().getHeight());
         o.addProperty("screen", mc.screen == null ? null : mc.screen.getClass().getName());
+        o.addProperty("window_focused", mc.isWindowActive());
+        if (!mc.isWindowActive()) o.addProperty("fps_note", "window unfocused: Minecraft throttles FPS; focus the window for real numbers");
         return o;
     }
 
-    private static double averageMs(LocalSampleLogger logger, int lastN) {
+    private static double averageMs(LocalSampleLogger logger, int lastN, int dimension) {
         int size = logger.size();
         if (size <= 0) return 0;
         int n = Math.min(lastN, size);
         long sum = 0;
-        for (int i = size - n; i < size; i++) sum += logger.get(i);
+        for (int i = size - n; i < size; i++) sum += logger.get(i, dimension);
         return (sum / (double) n) / 1_000_000.0;
     }
 
