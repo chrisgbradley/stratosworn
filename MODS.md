@@ -14,3 +14,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | EMI | 1.1.24 (emi-1.1.24+1.21.1+neoforge.jar) | both | Recipe viewer. Release builds on 1.21.1 NeoForge; JEI is beta-only there. |
 | Lithostitched | (pulled by Tectonic) | both | Worldgen library Tectonic depends on. Version pinned in `pack/mods/lithostitched.pw.toml`. |
 | Tectonic | 3.0.26 | both | Terrain with real height. Tested alone first per the brief. |
+| Distant Horizons | 3.2.0-b | client | Long-range LODs. The look the brief asks for. Client only; server skips it. |

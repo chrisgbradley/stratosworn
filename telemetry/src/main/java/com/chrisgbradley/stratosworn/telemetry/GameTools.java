@@ -3,6 +3,7 @@ package com.chrisgbradley.stratosworn.telemetry;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.mojang.blaze3d.platform.NativeImage;
 import com.mojang.serialization.JsonOps;
 import net.minecraft.client.Minecraft;
@@ -468,16 +469,17 @@ public final class GameTools {
             if (!js.contains(needle) && !js.contains("\"" + needleLoose + "\"")) continue;
 
             boolean isResult = false;
+            boolean knownResult = false;
             try {
                 ItemStack res = holder.value().getResultItem(level.registryAccess());
                 if (!res.isEmpty()) {
+                    knownResult = true;
                     isResult = BuiltInRegistries.ITEM.getKey(res.getItem()).toString().equals(needleLoose);
                 }
             } catch (Throwable ignored) {}
-            if (!isResult) {
-                // heuristic for modded recipes with custom output keys
-                isResult = js.matches("(?s).*\"(result|results|output|outputs|primary_output|item_outputs)\".*")
-                        && resultSectionContains(js, needleLoose);
+            if (!knownResult) {
+                // modded recipes (Create processing, Ars) report no vanilla result item; fall back to the JSON shape
+                isResult = resultSectionContains(js, needleLoose);
             }
 
             JsonObject e = new JsonObject();
@@ -501,13 +503,14 @@ public final class GameTools {
     }
 
     private static boolean resultSectionContains(String js, String item) {
-        // crude: does the item appear after the first occurrence of a result-ish key?
-        int idx = -1;
-        for (String key : new String[]{"\"result\"", "\"results\"", "\"output\"", "\"outputs\"", "\"primary_output\"", "\"item_outputs\""}) {
-            int i = js.indexOf(key);
-            if (i >= 0 && (idx < 0 || i < idx)) idx = i;
-        }
-        return idx >= 0 && js.indexOf("\"" + item + "\"", idx) >= 0;
+        // Does the item appear inside the value of a result-ish key? Parse that key's value only.
+        try {
+            JsonObject root = JsonParser.parseString(js).getAsJsonObject();
+            for (String key : new String[]{"result", "results", "output", "outputs", "primary_output", "item_outputs"}) {
+                if (root.has(key) && McpJson.compact(root.get(key)).contains("\"" + item + "\"")) return true;
+            }
+        } catch (Throwable ignored) {}
+        return false;
     }
 
     private static String encodeRecipe(Recipe<?> recipe, RegistryOps<JsonElement> ops) {

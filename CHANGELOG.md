@@ -4,6 +4,9 @@ Every mod add, config change, and why. Newest first.
 
 ## 0.1.0 (in progress)
 
+- 2026-09-09: Added Distant Horizons 3.2.0-b, `side = "client"` (packwiz defaulted to both because Modrinth marks it optional/optional). Loaded on the dev client alongside Create, Aeronautics, Ars, Tectonic, Terralith; joined the local server clean.
+- 2026-09-09: Local server: `ops.json` grants the dev client's offline player `Dev` op so `run_command` and remote tick sampling work; RCON enabled on 25575 (local password in `server.properties`, git-ignored) so `scripts/rcon.py stop` can stop the detached server.
+- 2026-09-09: Telemetry `recipe_lookup` now classifies makes/uses from the vanilla result item when known, and parses only result-keyed JSON for modded recipes. Previously a brass-nugget recipe was filed under brass-ingot makes.
 - 2026-09-09: Added Terralith 2.5.8 on top of Tectonic. Boot green. Terralith logs axolotl mob-category WARNs for its water biomes; known upstream noise, not an error.
 - 2026-09-09: Telemetry metafile moved out of the pack to `docs/stratosworn-telemetry.pw.toml.template`. packwiz-installer's CLI mode auto-accepts optional files and then fails on the placeholder URL, which broke client installs. The dev client loads telemetry from the Gradle classpath instead. Restore the metafile with a real release URL once the repo has one.
 - 2026-09-09: Added EMI 1.1.24, then Tectonic 3.0.26 (+ Lithostitched dependency). Both boot green. Tectonic alone first; Terralith pairing tested next.
