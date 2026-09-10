@@ -134,19 +134,19 @@ hash = "1b0eb679a27907874a70aa61b0d309316e920a8cdd490957340082d3fbfff818"
 
 [[files]]
 file = "kubejs/data/idas/tags/worldgen/biome/has_structure/bopmohogany_biomes.json"
-hash = "1380a4ebb2cee1370e0723fa2679673f3e03fe36b097baa0317986cc4a5d83a1"
+hash = "a2ee4b03d7fa255d234857d942a2c0bef15dbdb758dfc304087f2d09af6abff1"
 
 [[files]]
 file = "kubejs/data/idas/tags/worldgen/biome/has_structure/bopredwood_biomes.json"
-hash = "1380a4ebb2cee1370e0723fa2679673f3e03fe36b097baa0317986cc4a5d83a1"
+hash = "a2ee4b03d7fa255d234857d942a2c0bef15dbdb758dfc304087f2d09af6abff1"
 
 [[files]]
 file = "kubejs/data/idas/tags/worldgen/biome/has_structure/byg_redwood_biomes.json"
-hash = "1380a4ebb2cee1370e0723fa2679673f3e03fe36b097baa0317986cc4a5d83a1"
+hash = "a2ee4b03d7fa255d234857d942a2c0bef15dbdb758dfc304087f2d09af6abff1"
 
 [[files]]
 file = "kubejs/data/idas/tags/worldgen/biome/has_structure/bygmohogany_biomes.json"
-hash = "1380a4ebb2cee1370e0723fa2679673f3e03fe36b097baa0317986cc4a5d83a1"
+hash = "a2ee4b03d7fa255d234857d942a2c0bef15dbdb758dfc304087f2d09af6abff1"
 
 [[files]]
 file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_dead.json"
@@ -1403,18 +1403,8 @@ hash = "5a26489b734991c0511abfe43bf9143c935b8483d854a78fecd2e84993fb09cc"
 metafile = true
 
 [[files]]
-file = "mods/idas.pw.toml"
-hash = "b13158a1f8daea08344c22f072a708fd658a958e06a24560e5a3016e69c16375"
-metafile = true
-
-[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "48b746cb623c16a8cee88ec0d7d42233d74d97b9cf92d662f121633723d50876"
-metafile = true
-
-[[files]]
-file = "mods/integrated-api.pw.toml"
-hash = "703e92fc99236364da4c6ac04cf84d8e5b6c9f110a04252b2b6efc47e61448ec"
 metafile = true
 
 [[files]]
@@ -1478,11 +1468,6 @@ hash = "9ea823bd03ce9811c59d00646203f5cb8560a7dacd9352f4b5e6865f7d05fcfd"
 metafile = true
 
 [[files]]
-file = "mods/quark.pw.toml"
-hash = "8882572e1eee8dad7cca2cbe1b07c770b0e51a233f7ff3d7be6c454cad28042a"
-metafile = true
-
-[[files]]
 file = "mods/rhino.pw.toml"
 hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
 metafile = true
@@ -1510,11 +1495,6 @@ metafile = true
 [[files]]
 file = "mods/stratosworn-telemetry.pw.toml"
 hash = "d20d4908f89987936415c119e98ac3b10bf98d9d59d47ed7d98e6066562786aa"
-metafile = true
-
-[[files]]
-file = "mods/supplementaries.pw.toml"
-hash = "950b12e97f08fe502bb02c5f54341fa98535c60eea9eb53859a29b2d612381ca"
 metafile = true
 
 [[files]]

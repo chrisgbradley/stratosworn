@@ -50,8 +50,8 @@ for ns, path in sorted(tags):
         continue
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps({
-        "_comment": f"Override: {ns} ships this tag referencing content from optional mods this pack does not have.",
-        "replace": False, "values": []}, indent=2) + chr(10), encoding="utf-8")
+        "_comment": f"Override: {ns} ships this tag referencing content from optional mods this pack does not have. replace=true so the broken references are dropped, not merged.",
+        "replace": True, "values": []}, indent=2) + chr(10), encoding="utf-8")
     written.append(f"tag {ns}:{d}/{path}")
 
 for ns, path in sorted(ids):

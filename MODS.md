@@ -33,6 +33,7 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 
 ## Rejected after testing
 
+- Integrated Dungeons and Structures 1.13.7: ships compat loot tables and biome tags for mods this pack does not have (BYG, Biomes O' Plenty), and its own `idas:dread_citadel` spawner mob list fails to parse regardless of any override. The server does start, so this is a cleanliness call rather than a hard failure; Towns and Towers already covers structures. Revisit if IDAS tidies its data.
 - Ars Ocultas 2.6.1: requires Occultism (excluded second magic path).
 - Ars Additions 21.3.0: manifest is 1.21.0-only ([1.21,1.21.1)); breaks Create block registration on 1.21.1.
 - Aeronautics: Simulated Copycats 1.3.2: with the ModernFix mixin fixed it still fails, now on the server, with Create's `AllAdvancements` hitting an unbound `create:chocolate_bucket`. Genuine load-order conflict with Create 6.0.10. See `docs/DEV_CLIENT_REGISTRATE.md`.
