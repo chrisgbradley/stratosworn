@@ -55,3 +55,4 @@ machine count. Spark profile saved next to the machine-field one.
 | + Create Encased | 2026-09-10 11:00 | 227.7 | 3.7 | 3.0 | 1300.3 | 453.0 | 10.0 | 50 |
 | + Not Enough Glyphs | 2026-09-10 11:04 | 223.2 | 4.1 | 3.0 | 1300.4 | 453.0 | 10.0 | 52 |
 | + SSRD (client) | 2026-09-10 11:23 | 267.7 | 3.3 | 2.6 | 1291.9 | 453.0 | 10.0 | 53 |
+| + Ars Elemental | 2026-09-10 11:37 | 255.9 | 3.2 | 2.6 | 1316.4 | 453.0 | 10.0 | 54 |

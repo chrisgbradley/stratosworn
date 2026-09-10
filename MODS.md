@@ -44,3 +44,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Create Encased | 1.9.0 | both | Encased cogs and shafts. Slicer compat loot tables overridden. |
 | Not Enough Glyphs | 4.6.1 | both | Enough glyphs that each chapter has its own. |
 | Separate Sable Render Distance | 1.8.6 | client | Airships render out to Distant Horizons range. Requires Sodium, so client-only. High Country must-have. |
+| Ars Elemental | 0.7.10.1 (CurseForge; no Modrinth build for 1.21.1) | both | Element-school glyphs and spells. The Four Elements chapters depend on it. |
