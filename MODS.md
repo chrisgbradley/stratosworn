@@ -26,6 +26,7 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 
 ## Rejected after testing
 
+- simulated-copycats (Foundry & Grimoire chain, see CHANGELOG).
 - ssrd (Foundry & Grimoire chain, see CHANGELOG).
 - ars-elemancy (Foundry & Grimoire chain, see CHANGELOG).
 - not-enough-glyphs (Foundry & Grimoire chain, see CHANGELOG).
