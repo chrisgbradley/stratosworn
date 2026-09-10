@@ -1,0 +1,99 @@
+{
+  "id": "chapters",
+  "title": "Quest chapters",
+  "description": "One chapter per progression stage plus one each for Create, Aeronautics, Ars, and exploration. Shape only; text goes in QUESTS.md before any SNBT.",
+  "nodes": [
+    {
+      "id": "start",
+      "label": "Landfall",
+      "kind": "world",
+      "note": "Opening chapter. Teaches the two trees exist and that neither finishes alone."
+    },
+    {
+      "id": "ch1",
+      "label": "Valley Floor",
+      "kind": "world",
+      "note": "Tier 1."
+    },
+    {
+      "id": "ch2",
+      "label": "Foothills",
+      "kind": "world",
+      "note": "Tier 2."
+    },
+    {
+      "id": "ch3",
+      "label": "The Peaks",
+      "kind": "world",
+      "note": "Tier 3."
+    },
+    {
+      "id": "ch4",
+      "label": "Sky Islands",
+      "kind": "world",
+      "note": "Tier 4."
+    },
+    {
+      "id": "cr",
+      "label": "The Foundry",
+      "kind": "create",
+      "note": "Create side-chapter, runs alongside all tiers."
+    },
+    {
+      "id": "ar",
+      "label": "The Grimoire",
+      "kind": "ars",
+      "note": "Ars side-chapter, runs alongside all tiers."
+    },
+    {
+      "id": "ae",
+      "label": "Aeronautics",
+      "kind": "create",
+      "note": "Flight chapter, unlocks at tier 3."
+    },
+    {
+      "id": "tr",
+      "label": "Trade Routes",
+      "kind": "gate",
+      "note": "Sky Trade economy. Bounties and contracts."
+    }
+  ],
+  "edges": [
+    [
+      "start",
+      "ch1"
+    ],
+    [
+      "ch1",
+      "ch2"
+    ],
+    [
+      "ch2",
+      "ch3"
+    ],
+    [
+      "ch3",
+      "ch4"
+    ],
+    [
+      "ch1",
+      "cr"
+    ],
+    [
+      "ch1",
+      "ar"
+    ],
+    [
+      "ch3",
+      "ae"
+    ],
+    [
+      "ch2",
+      "tr"
+    ],
+    [
+      "ae",
+      "ch4"
+    ]
+  ]
+}

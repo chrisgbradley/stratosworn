@@ -1,0 +1,23 @@
+{
+  "skill_name": "stratosworn-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Tier 2 feels thin on the Ars side. Add a gate so the apprentice spellbook needs something from Create's steam chain, and make sure the foothills still need both trees. Update the tier graph and the progression doc.",
+      "expected_output": "design/graphs/tiers.json gains a gate with real item ids (checked with item_ids.py), check_graph.py passes with no cycles, PROGRESSION.md tier 2 table gets the matching row, CHANGELOG.md notes the change, and the board is rebuilt. The reply names the gate's payoff and roughly when the player reaches it.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Sketch the first version of the passive skill tree: one root, a branch per element, and the nodes that unlock each tier's Create and Ars starting items. Put it on the board as its own tab.",
+      "expected_output": "A new design/graphs/skilltree.json with kinds set, no cycles, item ids that exist in the jars or are marked stratosworn:*, build_board.py --check passing, and the board republished. The reply says which Pufferfish's Skills files this maps to and that the exact keys must be read from the mod's generated config before emitting any.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Christian left notes on the tier board saying the shrine idea for Ignite is fine but tier 4 feels like it has no Ars side worth doing. Address his notes and revise tier 4.",
+      "expected_output": "Reads the notes collection from the artifact database first, revises tier 4 in design/graphs/tiers.json without renaming existing node ids, adds an Ars-side gate with a real payoff, passes check_graph.py, republishes with the artifact url so positions survive, and answers each note in the reply and CHANGELOG.",
+      "files": []
+    }
+  ]
+}

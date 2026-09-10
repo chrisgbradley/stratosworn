@@ -1,0 +1,509 @@
+{
+  "id": "tiers",
+  "title": "Progression tiers",
+  "description": "Altitude Ladder spine with Four Elements chapters. Every tier forces both trees. Item IDs are from the jars in the pack; stratosworn:* items do not exist yet and would be registered via KubeJS.",
+  "nodes": [
+    {
+      "id": "t1",
+      "label": "Tier 1 — Valleys",
+      "kind": "world",
+      "note": "Earth · drills and belts",
+      "band": 1
+    },
+    {
+      "id": "andesite",
+      "label": "Source-touched andesite",
+      "kind": "hybrid",
+      "item": "stratosworn:source_touched_andesite",
+      "note": "New item. Imbuement of minecraft:andesite.",
+      "band": 1
+    },
+    {
+      "id": "imbuement",
+      "label": "Imbuement chamber",
+      "kind": "ars",
+      "item": "ars_nouveau:imbuement_chamber",
+      "band": 1
+    },
+    {
+      "id": "andesite_alloy",
+      "label": "Andesite alloy",
+      "kind": "create",
+      "item": "create:andesite_alloy",
+      "band": 1
+    },
+    {
+      "id": "wrench",
+      "label": "Wrench",
+      "kind": "create",
+      "item": "create:wrench",
+      "band": 1
+    },
+    {
+      "id": "glyph_break",
+      "label": "Glyph: Break",
+      "kind": "ars",
+      "item": "ars_nouveau:glyph_break",
+      "band": 1
+    },
+    {
+      "id": "novice_book",
+      "label": "Novice spellbook",
+      "kind": "ars",
+      "item": "ars_nouveau:novice_spell_book",
+      "band": 1
+    },
+    {
+      "id": "cogwheel",
+      "label": "Cogwheel",
+      "kind": "create",
+      "item": "create:cogwheel",
+      "band": 1
+    },
+    {
+      "id": "drill",
+      "label": "Mechanical drill",
+      "kind": "create",
+      "item": "create:mechanical_drill",
+      "band": 1
+    },
+    {
+      "id": "earth_glyphs",
+      "label": "Earth glyphs",
+      "kind": "ars",
+      "item": "glyph_break / crush / fell / harvest",
+      "band": 1
+    },
+    {
+      "id": "t2",
+      "label": "Tier 2 — Foothills",
+      "kind": "world",
+      "note": "Water · pumps and steam. Cold Sweat gates travel.",
+      "band": 2
+    },
+    {
+      "id": "source_gem",
+      "label": "Source gem",
+      "kind": "ars",
+      "item": "ars_nouveau:source_gem",
+      "band": 2
+    },
+    {
+      "id": "brass",
+      "label": "Arcane brass",
+      "kind": "hybrid",
+      "item": "create:brass_ingot",
+      "note": "Mixer recipe gains a source gem.",
+      "band": 2
+    },
+    {
+      "id": "brass_casing",
+      "label": "Brass casing",
+      "kind": "create",
+      "item": "create:brass_casing",
+      "band": 2
+    },
+    {
+      "id": "source_jar",
+      "label": "Source jar",
+      "kind": "ars",
+      "item": "ars_nouveau:source_jar",
+      "band": 2
+    },
+    {
+      "id": "pump",
+      "label": "Mechanical pump",
+      "kind": "create",
+      "item": "create:mechanical_pump",
+      "band": 2
+    },
+    {
+      "id": "water_glyphs",
+      "label": "Water glyphs",
+      "kind": "ars",
+      "item": "conjure_water / bubble / freeze / evaporate",
+      "band": 2
+    },
+    {
+      "id": "attuned_pipe",
+      "label": "Water-attuned pipe",
+      "kind": "hybrid",
+      "item": "stratosworn:attuned_pipe",
+      "note": "Enchanting apparatus on create:fluid_pipe.",
+      "band": 2
+    },
+    {
+      "id": "steam",
+      "label": "Steam engine",
+      "kind": "create",
+      "item": "create:steam_engine",
+      "band": 2
+    },
+    {
+      "id": "brass_hand",
+      "label": "Brass hand",
+      "kind": "create",
+      "item": "create:brass_hand",
+      "band": 2
+    },
+    {
+      "id": "apprentice_book",
+      "label": "Apprentice spellbook",
+      "kind": "ars",
+      "item": "ars_nouveau:apprentice_spell_book",
+      "band": 2
+    },
+    {
+      "id": "t3",
+      "label": "Tier 3 — Peaks",
+      "kind": "world",
+      "note": "Fire · burners and smelting.",
+      "band": 3
+    },
+    {
+      "id": "shrine",
+      "label": "Peak shrine",
+      "kind": "world",
+      "note": "Datapack structure. Holds the first Ignite glyph, which is what breaks the burner/cinder deadlock.",
+      "band": 3
+    },
+    {
+      "id": "glyph_ignite",
+      "label": "Glyph: Ignite",
+      "kind": "ars",
+      "item": "ars_nouveau:glyph_ignite",
+      "note": "Shrine loot only. Not craftable.",
+      "band": 3
+    },
+    {
+      "id": "precision",
+      "label": "Precision mechanism",
+      "kind": "create",
+      "item": "create:precision_mechanism",
+      "band": 3
+    },
+    {
+      "id": "apparatus",
+      "label": "Enchanting apparatus",
+      "kind": "ars",
+      "item": "ars_nouveau:enchanting_apparatus",
+      "band": 3
+    },
+    {
+      "id": "attuned_core",
+      "label": "Attuned precision core",
+      "kind": "hybrid",
+      "item": "stratosworn:attuned_core",
+      "note": "New item. Precision mechanism through the apparatus.",
+      "band": 3
+    },
+    {
+      "id": "cinder",
+      "label": "Cinder flour",
+      "kind": "create",
+      "item": "create:cinder_flour",
+      "band": 3
+    },
+    {
+      "id": "fire_glyphs",
+      "label": "Fire glyphs",
+      "kind": "ars",
+      "item": "ignite / flare / smelt / explosion",
+      "band": 3
+    },
+    {
+      "id": "burner",
+      "label": "Blaze burner",
+      "kind": "create",
+      "item": "create:blaze_burner",
+      "band": 3
+    },
+    {
+      "id": "archmage_book",
+      "label": "Archmage spellbook",
+      "kind": "ars",
+      "item": "ars_nouveau:archmage_spell_book",
+      "band": 3
+    },
+    {
+      "id": "envelope",
+      "label": "Balloon envelope",
+      "kind": "create",
+      "item": "aeronautics:white_envelope",
+      "note": "Needs peak-only silk from a datapack loot table.",
+      "band": 3
+    },
+    {
+      "id": "t4",
+      "label": "Tier 4 — Sky islands",
+      "kind": "world",
+      "note": "Air · Aeronautics. Waystones link islands only.",
+      "band": 4
+    },
+    {
+      "id": "levitite",
+      "label": "Levitite",
+      "kind": "create",
+      "item": "aeronautics:levitite",
+      "note": "Sky-island stone.",
+      "band": 4
+    },
+    {
+      "id": "ritual",
+      "label": "Aether ritual",
+      "kind": "ars",
+      "item": "ars_nouveau:ritual_brazier",
+      "note": "Source feed must come from a Create-driven generator.",
+      "band": 4
+    },
+    {
+      "id": "aether_alloy",
+      "label": "Aether alloy",
+      "kind": "hybrid",
+      "item": "stratosworn:aether_alloy",
+      "note": "New item. Ritual only.",
+      "band": 4
+    },
+    {
+      "id": "engine",
+      "label": "Engine assembly",
+      "kind": "create",
+      "item": "simulated:engine_assembly",
+      "band": 4
+    },
+    {
+      "id": "propeller",
+      "label": "Wooden propeller",
+      "kind": "create",
+      "item": "aeronautics:wooden_propeller",
+      "band": 4
+    },
+    {
+      "id": "air_glyphs",
+      "label": "Air glyphs",
+      "kind": "ars",
+      "item": "gust / wind_shear / launch / glide",
+      "band": 4
+    },
+    {
+      "id": "gyro",
+      "label": "Gyroscopic mechanism",
+      "kind": "create",
+      "item": "simulated:gyroscopic_mechanism",
+      "band": 4
+    },
+    {
+      "id": "airship",
+      "label": "Airship",
+      "kind": "gate",
+      "note": "The payoff. Physics hull under Sable.",
+      "band": 4
+    }
+  ],
+  "edges": [
+    [
+      "t1",
+      "imbuement"
+    ],
+    [
+      "t1",
+      "cogwheel"
+    ],
+    [
+      "imbuement",
+      "andesite"
+    ],
+    [
+      "andesite",
+      "andesite_alloy"
+    ],
+    [
+      "andesite_alloy",
+      "wrench"
+    ],
+    [
+      "glyph_break",
+      "wrench"
+    ],
+    [
+      "cogwheel",
+      "novice_book"
+    ],
+    [
+      "novice_book",
+      "glyph_break"
+    ],
+    [
+      "andesite_alloy",
+      "drill"
+    ],
+    [
+      "drill",
+      "earth_glyphs"
+    ],
+    [
+      "glyph_break",
+      "earth_glyphs"
+    ],
+    [
+      "earth_glyphs",
+      "t2"
+    ],
+    [
+      "wrench",
+      "t2"
+    ],
+    [
+      "t2",
+      "source_gem"
+    ],
+    [
+      "source_gem",
+      "brass"
+    ],
+    [
+      "brass",
+      "brass_casing"
+    ],
+    [
+      "brass_casing",
+      "source_jar"
+    ],
+    [
+      "brass",
+      "brass_hand"
+    ],
+    [
+      "brass_hand",
+      "apprentice_book"
+    ],
+    [
+      "brass",
+      "pump"
+    ],
+    [
+      "pump",
+      "water_glyphs"
+    ],
+    [
+      "apprentice_book",
+      "water_glyphs"
+    ],
+    [
+      "water_glyphs",
+      "attuned_pipe"
+    ],
+    [
+      "attuned_pipe",
+      "steam"
+    ],
+    [
+      "steam",
+      "t3"
+    ],
+    [
+      "source_jar",
+      "t3"
+    ],
+    [
+      "t3",
+      "precision"
+    ],
+    [
+      "precision",
+      "attuned_core"
+    ],
+    [
+      "apparatus",
+      "attuned_core"
+    ],
+    [
+      "source_jar",
+      "apparatus"
+    ],
+    [
+      "t3",
+      "shrine"
+    ],
+    [
+      "shrine",
+      "glyph_ignite"
+    ],
+    [
+      "glyph_ignite",
+      "burner"
+    ],
+    [
+      "burner",
+      "cinder"
+    ],
+    [
+      "cinder",
+      "fire_glyphs"
+    ],
+    [
+      "attuned_core",
+      "archmage_book"
+    ],
+    [
+      "attuned_core",
+      "envelope"
+    ],
+    [
+      "envelope",
+      "t4"
+    ],
+    [
+      "archmage_book",
+      "t4"
+    ],
+    [
+      "t4",
+      "levitite"
+    ],
+    [
+      "levitite",
+      "ritual"
+    ],
+    [
+      "ritual",
+      "aether_alloy"
+    ],
+    [
+      "source_jar",
+      "ritual"
+    ],
+    [
+      "aether_alloy",
+      "engine"
+    ],
+    [
+      "engine",
+      "gyro"
+    ],
+    [
+      "levitite",
+      "gyro"
+    ],
+    [
+      "engine",
+      "propeller"
+    ],
+    [
+      "propeller",
+      "air_glyphs"
+    ],
+    [
+      "engine",
+      "air_glyphs"
+    ],
+    [
+      "gyro",
+      "airship"
+    ],
+    [
+      "air_glyphs",
+      "airship"
+    ]
+  ]
+}

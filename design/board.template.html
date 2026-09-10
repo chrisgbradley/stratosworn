@@ -1,0 +1,559 @@
+<title>Stratosworn Design Board</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --ground: #eef1f4;
+    --panel: #f8fafb;
+    --canvas: #e6eaee;
+    --ink: #151f29;
+    --muted: #5c6b7a;
+    --faint: #8695a3;
+    --rule: #c6d0d8;
+    --rule-soft: #dbe2e8;
+    --brass: #a8781e;
+    --brass-soft: #f4e8cd;
+    --source: #6e4bb8;
+    --source-soft: #e9e1f8;
+    --hybrid: #1d7a6c;
+    --hybrid-soft: #d8efea;
+    --world: #2f6191;
+    --world-soft: #dbe8f4;
+    --gate: #b0392c;
+    --gate-soft: #f7dedb;
+    --accent: var(--brass);
+    --node-fill: #ffffff;
+    --shadow: 0 1px 2px rgba(21,31,41,.13);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0f151b;
+      --panel: #161e26;
+      --canvas: #131a21;
+      --ink: #e3e9ef;
+      --muted: #93a2b1;
+      --faint: #6f8091;
+      --rule: #2a3540;
+      --rule-soft: #202a34;
+      --brass: #d8ab4f;
+      --brass-soft: #342917;
+      --source: #a98ce8;
+      --source-soft: #2a2141;
+      --hybrid: #55c3b0;
+      --hybrid-soft: #133029;
+      --world: #6ba6e0;
+      --world-soft: #16283a;
+      --gate: #ef8375;
+      --gate-soft: #3b1d19;
+      --node-fill: #1b242d;
+      --shadow: 0 1px 2px rgba(0,0,0,.5);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0f151b; --panel: #161e26; --canvas: #131a21;
+    --ink: #e3e9ef; --muted: #93a2b1; --faint: #6f8091;
+    --rule: #2a3540; --rule-soft: #202a34;
+    --brass: #d8ab4f; --brass-soft: #342917;
+    --source: #a98ce8; --source-soft: #2a2141;
+    --hybrid: #55c3b0; --hybrid-soft: #133029;
+    --world: #6ba6e0; --world-soft: #16283a;
+    --gate: #ef8375; --gate-soft: #3b1d19;
+    --node-fill: #1b242d; --shadow: 0 1px 2px rgba(0,0,0,.5);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    font-size: 15px; line-height: 1.45;
+    height: 100vh; display: flex; flex-direction: column; overflow: hidden;
+  }
+  h1, h2 { font-family: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif; margin: 0; text-wrap: balance; }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace; }
+
+  header {
+    display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap;
+    padding: 12px 18px 10px; border-bottom: 1px solid var(--rule); background: var(--panel);
+  }
+  header h1 { font-size: 19px; font-weight: 800; letter-spacing: -.01em; }
+  header .sub { font-size: 13.5px; color: var(--muted); }
+  header .spacer { flex: 1 1 auto; }
+  #status { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: var(--faint); white-space: nowrap; }
+
+  nav { display: flex; gap: 2px; padding: 0 12px; background: var(--panel); border-bottom: 1px solid var(--rule); overflow-x: auto; }
+  nav button {
+    font: inherit; font-size: 13.5px; border: 0; background: none; color: var(--muted);
+    padding: 9px 13px 8px; border-bottom: 2px solid transparent; cursor: pointer; white-space: nowrap;
+  }
+  nav button:hover { color: var(--ink); }
+  nav button[aria-selected="true"] { color: var(--ink); font-weight: 600; border-bottom-color: var(--accent); }
+  nav button:focus-visible, .tool:focus-visible { outline: 2px solid var(--source); outline-offset: 1px; }
+
+  .bar { display: flex; align-items: center; gap: 8px; padding: 8px 16px; border-bottom: 1px solid var(--rule); background: var(--panel); flex-wrap: wrap; }
+  .tool {
+    font: inherit; font-size: 13px; padding: 4px 11px; border-radius: 4px; cursor: pointer;
+    border: 1px solid var(--rule); background: var(--node-fill); color: var(--ink);
+  }
+  .tool:hover { border-color: var(--accent); }
+  .legend { display: flex; gap: 12px; flex-wrap: wrap; margin-left: auto; font-size: 12.5px; color: var(--muted); align-items: center; }
+  .swatch { display: inline-flex; align-items: center; gap: 5px; }
+  .swatch i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+
+  main { flex: 1 1 auto; display: flex; min-height: 0; }
+  #canvasWrap { flex: 1 1 auto; position: relative; background: var(--canvas); overflow: hidden; min-width: 0; }
+  svg { width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; }
+  svg.panning { cursor: grabbing; }
+  .edge { fill: none; stroke: var(--faint); stroke-width: 1.6; }
+  .edge.hi { stroke: var(--accent); stroke-width: 2.6; }
+  .edge.back { stroke: var(--gate); stroke-width: 2.2; stroke-dasharray: 6 4; }
+  #cycleWarn {
+    font-size: 12.5px; padding: 3px 10px; border-radius: 4px;
+    background: var(--gate-soft); color: var(--gate); font-weight: 600;
+  }
+  .node rect { fill: var(--node-fill); stroke: var(--rule); stroke-width: 1.5; rx: 5; filter: drop-shadow(var(--shadow)); }
+  .node.sel rect { stroke: var(--accent); stroke-width: 2.5; }
+  .node { cursor: grab; }
+  .node.dragging { cursor: grabbing; }
+  .node text { font-family: "Source Sans 3", sans-serif; font-size: 12.5px; fill: var(--ink); pointer-events: none; }
+  .node text.id { font-family: "IBM Plex Mono", monospace; font-size: 10px; fill: var(--faint); }
+  .node .stripe { rx: 2; }
+  .node .noteDot { fill: var(--accent); }
+
+  aside {
+    width: 310px; flex: 0 0 310px; border-left: 1px solid var(--rule); background: var(--panel);
+    padding: 14px 16px 18px; overflow-y: auto;
+  }
+  aside h2 { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+  aside .kind { font-family: "IBM Plex Mono", monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .07em; }
+  aside dl { display: grid; grid-template-columns: auto minmax(0,1fr); gap: 5px 10px; margin: 14px 0 0; font-size: 13.5px; }
+  aside dt { color: var(--muted); }
+  aside dd { margin: 0; word-break: break-word; }
+  aside label { display: block; font-size: 12px; color: var(--muted); margin: 16px 0 5px; }
+  aside textarea {
+    width: 100%; min-height: 110px; resize: vertical; font: inherit; font-size: 13.5px;
+    padding: 8px 9px; border: 1px solid var(--rule); border-radius: 4px;
+    background: var(--node-fill); color: var(--ink);
+  }
+  aside textarea:focus-visible { outline: 2px solid var(--source); outline-offset: -1px; border-color: var(--source); }
+  .empty { color: var(--muted); font-size: 13.5px; }
+  .desc { font-size: 13.5px; color: var(--muted); margin-top: 10px; }
+  .chip { display: inline-block; padding: 1px 7px; border-radius: 3px; font-family: "IBM Plex Mono", monospace; font-size: 11px; }
+  .k-create { background: var(--brass-soft); color: var(--brass); }
+  .k-ars { background: var(--source-soft); color: var(--source); }
+  .k-hybrid { background: var(--hybrid-soft); color: var(--hybrid); }
+  .k-world { background: var(--world-soft); color: var(--world); }
+  .k-gate { background: var(--gate-soft); color: var(--gate); }
+
+  @media (max-width: 820px) {
+    aside { position: absolute; right: 0; top: 0; bottom: 0; z-index: 5; box-shadow: -4px 0 14px rgba(0,0,0,.18); }
+    aside[hidden] { display: none !important; }
+  }
+</style>
+
+<header>
+  <h1>Stratosworn Design Board</h1>
+  <span class="sub">Drag to arrange. Your layout and notes are saved and read back between revisions.</span>
+  <span class="spacer"></span>
+  <span id="status">local layout only</span>
+</header>
+
+<nav id="tabs" role="tablist"></nav>
+
+<div class="bar">
+  <button class="tool" id="btnLayout" title="Re-run the automatic layered arrangement">Auto-arrange</button>
+  <button class="tool" id="btnFit" title="Fit the whole graph in view">Fit</button>
+  <button class="tool" id="btnExport" title="Download this graph as JSON">Export JSON</button>
+  <span id="cycleWarn" hidden></span>
+  <span class="legend">
+    <span class="swatch"><i style="background:var(--brass)"></i>Create</span>
+    <span class="swatch"><i style="background:var(--source)"></i>Ars</span>
+    <span class="swatch"><i style="background:var(--hybrid)"></i>Hybrid / bridge</span>
+    <span class="swatch"><i style="background:var(--world)"></i>World</span>
+    <span class="swatch"><i style="background:var(--gate)"></i>Gate</span>
+  </span>
+</div>
+
+<main>
+  <div id="canvasWrap">
+    <svg id="svg"><g id="viewport"><g id="edges"></g><g id="nodes"></g></g></svg>
+  </div>
+  <aside id="inspector">
+    <p class="empty">Select a node to see its detail and leave a note.</p>
+  </aside>
+</main>
+
+<script>
+"use strict";
+
+/* ---------------------------------------------------------------- graphs
+   Structure is authored here and changes by republishing. Arrangement and
+   notes live in the artifact database, so revising structure never destroys
+   how Christian laid it out. */
+
+const GRAPHS = /*GRAPHS*/{}/*END GRAPHS*/;
+
+/* ---------------------------------------------------------------- state */
+
+const KINDS = { create: "Create", ars: "Ars", hybrid: "Hybrid", world: "World", gate: "Open question" };
+const NODE_W = 168, NODE_H = 46, COL_GAP = 90, ROW_GAP = 20, BAND_GAP = 46;
+
+let current = Object.keys(GRAPHS)[0];
+let positions = {};          // graphId -> { nodeId: {x,y} }
+let notes = {};              // graphId -> { nodeId: text }
+let selected = null;
+let db = null;
+let view = { x: 40, y: 30, k: 1 };
+
+const svg = document.getElementById("svg");
+const gViewport = document.getElementById("viewport");
+const gEdges = document.getElementById("edges");
+const gNodes = document.getElementById("nodes");
+const statusEl = document.getElementById("status");
+
+function setStatus(t) { statusEl.textContent = t; }
+
+/* ---------------------------------------------------------------- layout */
+
+function findBackEdges(graph) {
+  // DFS; an edge into a node still on the stack closes a cycle. Those edges are
+  // excluded from layering and drawn in red, because in a progression graph a cycle
+  // means the items in it can never be obtained.
+  const out = {};
+  graph.nodes.forEach(n => { out[n.id] = []; });
+  graph.edges.forEach(([a, b], i) => { if (out[a]) out[a].push([b, i]); });
+  const state = {}, back = new Set();
+  function visit(id) {
+    state[id] = 1;
+    for (const [next, i] of out[id] || []) {
+      if (state[next] === 1) back.add(i);
+      else if (!state[next]) visit(next);
+    }
+    state[id] = 2;
+  }
+  graph.nodes.forEach(n => { if (!state[n.id]) visit(n.id); });
+  return back;
+}
+
+function autoLayout(graph) {
+  const back = findBackEdges(graph);
+  const forward = graph.edges.filter((_, i) => !back.has(i));
+  const bands = [...new Set(graph.nodes.map(n => n.band || 0))].sort((a, b) => a - b);
+  const pos = {};
+  let yCursor = 0;
+
+  bands.forEach(band => {
+    const members = graph.nodes.filter(n => (n.band || 0) === band);
+    const ids = new Set(members.map(n => n.id));
+    // depth within the band only, so a long chain across bands does not become one long row
+    const depth = {};
+    members.forEach(n => { depth[n.id] = 0; });
+    const inner = forward.filter(([a, b]) => ids.has(a) && ids.has(b));
+    for (let pass = 0; pass < members.length; pass++) {
+      let moved = false;
+      inner.forEach(([a, b]) => {
+        if (depth[b] < depth[a] + 1) { depth[b] = depth[a] + 1; moved = true; }
+      });
+      if (!moved) break;
+    }
+    const byCol = {};
+    members.forEach(n => { (byCol[depth[n.id]] ||= []).push(n.id); });
+    const cols = Object.keys(byCol).map(Number).sort((a, b) => a - b);
+    let rows = 1;
+    cols.forEach(c => {
+      byCol[c].forEach((id, i) => {
+        pos[id] = { x: c * (NODE_W + COL_GAP), y: yCursor + i * (NODE_H + ROW_GAP) };
+      });
+      rows = Math.max(rows, byCol[c].length);
+    });
+    yCursor += rows * (NODE_H + ROW_GAP) + BAND_GAP;
+  });
+  return pos;
+}
+
+function posFor(graphId) {
+  const g = GRAPHS[graphId];
+  positions[graphId] ||= {};
+  const saved = positions[graphId];
+  const auto = autoLayout(g);
+  const out = {};
+  g.nodes.forEach(n => { out[n.id] = saved[n.id] || auto[n.id] || { x: 0, y: 0 }; });
+  return out;
+}
+
+/* ---------------------------------------------------------------- render */
+
+function edgePath(a, b) {
+  const x1 = a.x + NODE_W, y1 = a.y + NODE_H / 2;
+  const x2 = b.x, y2 = b.y + NODE_H / 2;
+  const mx = (x1 + x2) / 2;
+  return `M ${x1} ${y1} C ${mx} ${y1}, ${mx} ${y2}, ${x2} ${y2}`;
+}
+
+function render() {
+  const g = GRAPHS[current];
+  const pos = posFor(current);
+  positions[current] = pos;
+
+  gEdges.textContent = "";
+  const back = findBackEdges(g);
+  g.edges.forEach(([a, b], i) => {
+    if (!pos[a] || !pos[b]) return;
+    const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    let cls = "edge";
+    if (back.has(i)) cls += " back";
+    if (selected && (a === selected || b === selected)) cls += " hi";
+    p.setAttribute("class", cls);
+    p.setAttribute("d", edgePath(pos[a], pos[b]));
+    if (back.has(i)) {
+      const t = document.createElementNS("http://www.w3.org/2000/svg", "title");
+      t.textContent = `Circular dependency: ${a} depends on ${b}, which already depends on ${a}.`;
+      p.appendChild(t);
+    }
+    gEdges.appendChild(p);
+  });
+  const cycleEl = document.getElementById("cycleWarn");
+  cycleEl.hidden = back.size === 0;
+  cycleEl.textContent = back.size === 1
+    ? "1 circular dependency (red) — nothing in that loop is obtainable"
+    : `${back.size} circular dependencies (red) — nothing in those loops is obtainable`;
+
+  gNodes.textContent = "";
+  g.nodes.forEach(n => {
+    const p = pos[n.id];
+    const el = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    el.setAttribute("class", "node" + (selected === n.id ? " sel" : ""));
+    el.setAttribute("transform", `translate(${p.x},${p.y})`);
+    el.dataset.id = n.id;
+
+    const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    rect.setAttribute("width", NODE_W); rect.setAttribute("height", NODE_H);
+    el.appendChild(rect);
+
+    const stripe = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    stripe.setAttribute("class", "stripe");
+    stripe.setAttribute("x", 0); stripe.setAttribute("y", 0);
+    stripe.setAttribute("width", 4); stripe.setAttribute("height", NODE_H);
+    stripe.setAttribute("fill", `var(--${n.kind})`);
+    el.appendChild(stripe);
+
+    const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    label.setAttribute("x", 13); label.setAttribute("y", n.item ? 20 : 27);
+    label.textContent = n.label.length > 24 ? n.label.slice(0, 23) + "…" : n.label;
+    el.appendChild(label);
+
+    if (n.item) {
+      const id = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      id.setAttribute("class", "id"); id.setAttribute("x", 13); id.setAttribute("y", 34);
+      id.textContent = n.item.length > 26 ? n.item.slice(0, 25) + "…" : n.item;
+      el.appendChild(id);
+    }
+
+    if ((notes[current] || {})[n.id]) {
+      const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      dot.setAttribute("class", "noteDot");
+      dot.setAttribute("cx", NODE_W - 9); dot.setAttribute("cy", 9); dot.setAttribute("r", 3.5);
+      el.appendChild(dot);
+    }
+    gNodes.appendChild(el);
+  });
+
+  applyView();
+}
+
+function applyView() {
+  gViewport.setAttribute("transform", `translate(${view.x},${view.y}) scale(${view.k})`);
+}
+
+function fit() {
+  const pos = positions[current] || {};
+  const vals = Object.values(pos);
+  if (!vals.length) return;
+  const minX = Math.min(...vals.map(p => p.x)), maxX = Math.max(...vals.map(p => p.x)) + NODE_W;
+  const minY = Math.min(...vals.map(p => p.y)), maxY = Math.max(...vals.map(p => p.y)) + NODE_H;
+  const r = svg.getBoundingClientRect();
+  const k = Math.min((r.width - 80) / (maxX - minX), (r.height - 80) / (maxY - minY), 1.4);
+  view.k = Math.max(0.04, k);
+  view.x = (r.width - (maxX - minX) * view.k) / 2 - minX * view.k;
+  view.y = (r.height - (maxY - minY) * view.k) / 2 - minY * view.k;
+  if (!isFinite(view.x) || !isFinite(view.y)) { view.x = 40; view.y = 30; view.k = 1; }
+  applyView();
+}
+
+/* ---------------------------------------------------------------- inspector */
+
+function showInspector() {
+  const aside = document.getElementById("inspector");
+  const g = GRAPHS[current];
+  const n = g.nodes.find(x => x.id === selected);
+  if (!n) {
+    aside.innerHTML = `<p class="empty">Select a node to see its detail and leave a note.</p>
+      <p class="desc"><strong>${g.title}.</strong> ${g.description}</p>`;
+    return;
+  }
+  const note = (notes[current] || {})[n.id] || "";
+  aside.innerHTML = `
+    <span class="chip k-${n.kind}">${KINDS[n.kind]}</span>
+    <h2 style="margin-top:8px">${n.label}</h2>
+    <dl>
+      ${n.item ? `<dt>Item</dt><dd class="mono" style="font-size:12px">${n.item}</dd>` : ""}
+      <dt>Node</dt><dd class="mono" style="font-size:12px">${n.id}</dd>
+      ${n.note ? `<dt>Design</dt><dd>${n.note}</dd>` : ""}
+    </dl>
+    <label for="noteBox">Your note (saved)</label>
+    <textarea id="noteBox" placeholder="What should change here?"></textarea>`;
+  const box = document.getElementById("noteBox");
+  box.value = note;
+  box.addEventListener("input", () => {
+    (notes[current] ||= {})[n.id] = box.value;
+    queueSave("notes");
+    render();
+  });
+}
+
+/* ---------------------------------------------------------------- interaction */
+
+let drag = null, pan = null;
+
+svg.addEventListener("pointerdown", e => {
+  const nodeEl = e.target.closest(".node");
+  if (nodeEl) {
+    const id = nodeEl.dataset.id;
+    selected = id;
+    const p = positions[current][id];
+    drag = { id, el: nodeEl, dx: e.clientX / view.k - p.x, dy: e.clientY / view.k - p.y, moved: false };
+    nodeEl.classList.add("dragging");
+    render(); showInspector();
+  } else {
+    pan = { x: e.clientX - view.x, y: e.clientY - view.y };
+    svg.classList.add("panning");
+  }
+  svg.setPointerCapture(e.pointerId);
+});
+
+svg.addEventListener("pointermove", e => {
+  if (drag) {
+    const p = positions[current][drag.id];
+    p.x = Math.round((e.clientX / view.k - drag.dx) / 8) * 8;
+    p.y = Math.round((e.clientY / view.k - drag.dy) / 8) * 8;
+    drag.moved = true;
+    render();
+  } else if (pan) {
+    view.x = e.clientX - pan.x; view.y = e.clientY - pan.y;
+    applyView();
+  }
+});
+
+function endPointer() {
+  if (drag) {
+    drag.el.classList.remove("dragging");
+    if (drag.moved) queueSave("layout");
+    drag = null;
+  }
+  pan = null; svg.classList.remove("panning");
+}
+svg.addEventListener("pointerup", endPointer);
+svg.addEventListener("pointercancel", endPointer);
+
+svg.addEventListener("wheel", e => {
+  e.preventDefault();
+  const r = svg.getBoundingClientRect();
+  const mx = e.clientX - r.left, my = e.clientY - r.top;
+  const k2 = Math.max(0.04, Math.min(2.5, view.k * (e.deltaY < 0 ? 1.12 : 1 / 1.12)));
+  view.x = mx - (mx - view.x) * (k2 / view.k);
+  view.y = my - (my - view.y) * (k2 / view.k);
+  view.k = k2; applyView();
+}, { passive: false });
+
+/* ---------------------------------------------------------------- persistence */
+
+let saveTimer = null, pending = new Set();
+function queueSave(what) {
+  pending.add(what);
+  if (!db) { setStatus("local layout only — not saved"); return; }
+  setStatus("saving…");
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(flush, 600);
+}
+
+async function flush() {
+  if (!db) return;
+  const jobs = [...pending]; pending.clear();
+  try {
+    for (const what of jobs) {
+      if (what === "layout") {
+        await db.doc(`layouts/${current}`).set({ positions: positions[current], at: Date.now() });
+      } else if (what === "notes") {
+        await db.doc(`notes/${current}`).set({ notes: notes[current] || {}, at: Date.now() });
+      }
+    }
+    setStatus("saved");
+  } catch (err) {
+    setStatus("save failed — layout kept locally");
+  }
+}
+
+async function loadSaved() {
+  if (!db) return;
+  for (const id of Object.keys(GRAPHS)) {
+    try {
+      const l = await db.doc(`layouts/${id}`).get();
+      if (l && l.positions) positions[id] = { ...(positions[id] || {}), ...l.positions };
+      const n = await db.doc(`notes/${id}`).get();
+      if (n && n.notes) notes[id] = n.notes;
+    } catch (err) { /* first run, or unreadable: fall back to auto-layout */ }
+  }
+  render(); showInspector(); fit();
+  setStatus("saved layout loaded");
+}
+
+/* ---------------------------------------------------------------- chrome */
+
+const tabs = document.getElementById("tabs");
+Object.entries(GRAPHS).forEach(([id, g]) => {
+  const b = document.createElement("button");
+  b.type = "button"; b.role = "tab"; b.textContent = g.title;
+  b.setAttribute("aria-selected", id === current ? "true" : "false");
+  b.addEventListener("click", () => {
+    current = id; selected = null;
+    [...tabs.children].forEach(c => c.setAttribute("aria-selected", "false"));
+    b.setAttribute("aria-selected", "true");
+    render(); showInspector(); fit();
+  });
+  tabs.appendChild(b);
+});
+
+document.getElementById("btnLayout").addEventListener("click", () => {
+  positions[current] = autoLayout(GRAPHS[current]);
+  queueSave("layout"); render(); fit();
+});
+document.getElementById("btnFit").addEventListener("click", fit);
+
+document.getElementById("btnExport").addEventListener("click", async () => {
+  const g = GRAPHS[current];
+  const payload = {
+    graph: current, title: g.title, description: g.description,
+    nodes: g.nodes.map(n => ({ ...n, position: positions[current][n.id], note: (notes[current] || {})[n.id] || n.note || "" })),
+    edges: g.edges
+  };
+  const text = JSON.stringify(payload, null, 2);
+  const downloads = await claudeUse("downloads");
+  if (downloads) {
+    try { await downloads.save({ filename: `stratosworn-${current}.json`, data: text }); return; }
+    catch (err) { /* declined or unavailable: fall through */ }
+  }
+  const w = window.open("", "_blank");
+  if (w) { w.document.write("<pre>" + text.replace(/[<&]/g, c => c === "<" ? "&lt;" : "&amp;") + "</pre>"); w.document.close(); }
+});
+
+async function claudeUse(name) {
+  try { return window.claude && claude.use ? await claude.use(name) : null; }
+  catch (err) { return null; }
+}
+
+render(); showInspector(); fit();
+window.addEventListener("resize", fit);
+
+claudeUse("db").then(x => {
+  if (!x) { setStatus("local layout only — not saved"); return; }
+  db = x; loadSaved();
+});
+</script>

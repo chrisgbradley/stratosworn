@@ -1,0 +1,50 @@
+{
+  "id": "crosslinks",
+  "title": "Cross-links to verify",
+  "description": "Every place the two trees touch, and what still has to be checked in-game with the telemetry recipe_lookup tool before a script references it.",
+  "nodes": [
+    {
+      "id": "c1",
+      "label": "Ars Creo source generator",
+      "kind": "gate",
+      "note": "If Ars Creo ships a source-to-rotation block, tier 2's power exchange needs no custom block. Check its item list."
+    },
+    {
+      "id": "c2",
+      "label": "Create Ars Nouveau overlap",
+      "kind": "gate",
+      "note": "Second bridge mod. One bridge per link, never both. Not currently in the pack."
+    },
+    {
+      "id": "c3",
+      "label": "Aeronautics recipe shapes",
+      "kind": "gate",
+      "note": "simulated:engine_assembly and gyroscopic_mechanism use incomplete-item sequences. Confirm the assembly chain."
+    },
+    {
+      "id": "c4",
+      "label": "Glyph recipe format",
+      "kind": "gate",
+      "note": "Scribe's table recipes: confirm whether KubeJS can add an item cost to an existing glyph."
+    },
+    {
+      "id": "c5",
+      "label": "Enchanting apparatus recipes",
+      "kind": "gate",
+      "note": "Confirm the apparatus recipe type accepts arbitrary item in / item out for attuned parts."
+    },
+    {
+      "id": "c6",
+      "label": "Ore and ingot dedup",
+      "kind": "gate",
+      "note": "One copper, one zinc. Check for duplicates once all addons are in."
+    },
+    {
+      "id": "c7",
+      "label": "Vanilla removals",
+      "kind": "gate",
+      "note": "Enchanting table, brewing stand, elytra. Enchantment Industry owns enchanting."
+    }
+  ],
+  "edges": []
+}

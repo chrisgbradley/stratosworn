@@ -34,6 +34,8 @@ Tooling: Java 21, Go (for `go install github.com/packwiz/packwiz@latest`), Pytho
 | `telemetry/` | Client-only NeoForge mod that hosts an MCP server for Claude Code (dev only). |
 | `server/` | Local headless NeoForge server used for the boot test loop (git-ignored). |
 | `docs/` | Design notes: tier sketches, progression, quests. |
+| `design/` | Design board: `board.template.html` plus one graph per file in `graphs/`. Built and validated by the `stratosworn-design` skill. |
+| `.claude/skills/stratosworn-design/` | Project skill for progression, gate, skill-tree, quest and recipe-chain design. Scripts validate graphs against the installed jars and rebuild the board. |
 | `MODS.md` | One line per mod: name, version, side, why. |
 | `CHANGELOG.md` | Every config change and why. |
 
