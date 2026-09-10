@@ -36,9 +36,9 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 - Ars Ocultas 2.6.1: requires Occultism (excluded second magic path).
 - Ars Additions 21.3.0: manifest is 1.21.0-only ([1.21,1.21.1)); breaks Create block registration on 1.21.1.
 - Aeronautics: Simulated Copycats 1.3.2: with the ModernFix mixin fixed it still fails, now on the server, with Create's `AllAdvancements` hitting an unbound `create:chocolate_bucket`. Genuine load-order conflict with Create 6.0.10. See `docs/DEV_CLIENT_REGISTRATE.md`.
-- C2ME 0.4.0-alpha (server ERRORs on dedicated dist, overrides ModernFix). See CHANGELOG.
-- Moonrise 0.1.0-beta.15 (crashes Sable's explosion mixin at server boot). See CHANGELOG.
-- ScalableLux 0.3.0-alpha (Sable declares it incompatible). See CHANGELOG.
+- C2ME 0.4.0-alpha: server ERRORs locally, and upstream reports chunk loading freezing with Sable physics ships (closed as not planned). See `docs/SABLE_CONFLICTS.md`.
+- Moonrise 0.1.0-beta.15: crashes Sable's explosion mixin at boot; known open upstream issue with no owner. See `docs/SABLE_CONFLICTS.md`.
+- ScalableLux 0.3.0-alpha: Sable declares it incompatible; both replace light storage. See `docs/SABLE_CONFLICTS.md`.
 | Create Connected | 1.3.3 | both | Kinetic parts that finish contraption logistics. Dye Depot compat loot tables overridden. |
 | Create Encased | 1.9.0 | both | Encased cogs and shafts. Slicer compat loot tables overridden. |
 | Not Enough Glyphs | 4.6.1 | both | Enough glyphs that each chapter has its own. |
