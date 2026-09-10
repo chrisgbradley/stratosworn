@@ -264,6 +264,11 @@ hash = "5995decc8738d7ddccec218dfa1ed95db9eca5bb64c98fd2cede8bf9bbc837c2"
 metafile = true
 
 [[files]]
+file = "mods/ssrd.pw.toml"
+hash = "0d1fca6035de98932136aeb0bde3df5fe8ce37dcbadebce66c23d4fb8f88447c"
+metafile = true
+
+[[files]]
 file = "mods/stratosworn-telemetry.pw.toml"
 hash = "d20d4908f89987936415c119e98ac3b10bf98d9d59d47ed7d98e6066562786aa"
 metafile = true
