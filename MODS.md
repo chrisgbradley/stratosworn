@@ -49,3 +49,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | FTB Teams | (CurseForge) | both | Team scoping for quest progress. Phase 5. |
 | FTB Quests | (CurseForge) | both | The quest book. Phase 5. |
 | ProbeJS | 8.0.3 | client | Typings for KubeJS scripts. Dev-side aid; harmless in a release. |
+| Ars Elemancy | 1.17 | both | Element-flavored spells on Ars Elemental. Four Elements chapters. |
