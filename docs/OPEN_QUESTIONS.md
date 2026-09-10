@@ -20,5 +20,12 @@ From the brief, plus what came up while building. Answers change what gets built
 
 ## Raised while building
 
-(all answered; see above)
+11. **Export format, now that the pack mixes sources.** Some mods (Ars Elemental, the FTB
+    suite) exist only on CurseForge for 1.21.1. A Modrinth `.mrpack` can only carry
+    Modrinth-hosted downloads, so with CurseForge mods in the pack the options are: ship a
+    CurseForge-format pack, ship the packwiz URL as the install method (works for both, and
+    is what the Prism instance already does), or keep the pack Modrinth-pure and drop the
+    CurseForge-only mods. The packwiz URL route is the least friction and already proven.
+    Note `packwiz curseforge add` will silently rewrite an existing Modrinth metafile for a
+    shared dependency; check `git diff` after adding.
 
