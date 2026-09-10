@@ -50,3 +50,4 @@ follows: the number and size of simultaneously loaded ships is the server budget
 machine count. Spark profile saved next to the machine-field one.
 | + Copycats+, Create Deco, KubeJS | 2026-09-10 10:26 | 146.1 | 6.3 | 7.8 | 1450.4 | 233.1 | 13.2 | 43 |
 | + Create Enchantment Industry | 2026-09-10 10:32 | 239.0 | 3.6 | 3.7 | 1347.3 | 453.0 | 10.0 | 46 |
+| + Ars Creo | 2026-09-10 10:45 | 243.8 | 3.7 | 3.1 | 1258.8 | 453.0 | 10.0 | 48 |

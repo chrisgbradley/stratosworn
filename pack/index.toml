@@ -89,6 +89,11 @@ file = "kubejs/data/createdeco/recipe/placard.json"
 hash = "3c0e10b61ad63e8afc430ac2d29c76b3e614576f135b206690f04986b5a22f42"
 
 [[files]]
+file = "mods/ars-creo.pw.toml"
+hash = "e735b472ad5c38359636d5abb84ed1baeb461f72aa19c324c349543823a16188"
+metafile = true
+
+[[files]]
 file = "mods/ars-nouveau.pw.toml"
 hash = "8a857077b98b950607b66b0c4fec557f214190dd6657d5fc49cc3b8540126b5b"
 metafile = true

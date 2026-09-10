@@ -36,3 +36,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Create Deco | 2.1.3 | both | Industrial decor: catwalks, windows, lamps. `placard` recipe uses a 1.21.2 ingredient form; overridden in `pack/kubejs/data`. |
 | KubeJS | 2101.7.2 | both | Scripts and the pack's datapack folder (`pack/kubejs/data`). Phase 4. Pulls Rhino and Better Advanced Tooltips. |
 | Create Enchantment Industry | 2.5.3b | both | Enchanting as a Create process. Replaces vanilla enchanting per the tier rules. |
+| Ars Creo | 5.4.0 | both | The Create and Ars bridge. One bridge per cross-link. |
