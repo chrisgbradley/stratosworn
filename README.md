@@ -19,9 +19,9 @@ Tooling: Java 21, Go (for `go install github.com/packwiz/packwiz@latest`), Pytho
 
 - **Client (Prism):** create a NeoForge 1.21.1 instance, put `packwiz-installer-bootstrap.jar`
   in its `.minecraft`, and in Settings > Custom commands set the pre-launch command to
-  `java -jar packwiz-installer-bootstrap.jar -g -s client <pack URL>/pack.toml` (Java 21 on PATH).
-  Avoid `"$INST_JAVA"` in a hand-edited `instance.cfg`: Prism's parser drops the quotes and the
-  space after the path. Set it through the dialog.
+  `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar -g -s client <pack URL>/pack.toml`.
+  Set it through the dialog, not by editing `instance.cfg`: a hand-written quoted value loses
+  the space after `$INST_JAVA` when Prism re-saves the file.
 - **Server:** `server/` is a local NeoForge install for the boot loop (`scripts/boot-server.py`).
   The shipped server pack (Phase 6) installs the same way with `-s server`.
 - **Telemetry mod:** `scripts/build-telemetry.sh` builds it and points the pack at the jar.
