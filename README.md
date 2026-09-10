@@ -4,6 +4,27 @@ A Minecraft 1.21.1 NeoForge modpack where magic meets industry. Create and Creat
 Aeronautics drive the industrial side. Ars Nouveau drives the magic side. The world
 is built to look good at long range.
 
+Personal project, built for fun. Claude Code did most of the typing: scripts, docs, and
+commits are largely AI-authored, reviewed and steered by Christian. Not affiliated with any
+mod author.
+
+## Get it
+
+```bash
+git clone https://github.com/chrisgbradley/stratosworn.git
+cd stratosworn
+```
+
+Tooling: Java 21, Go (for `go install github.com/packwiz/packwiz@latest`), Python 3.12.
+
+- **Client (Prism):** create a NeoForge 1.21.1 instance and set the pre-launch command to
+  `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar -s client <pack URL>/pack.toml`, with
+  `packwiz-installer-bootstrap.jar` in the instance's `.minecraft`. Release URL is published
+  with each tag; for local dev, `scripts/serve.sh` serves this checkout.
+- **Server:** `server/` is a local NeoForge install for the boot loop (`scripts/boot-server.py`).
+  The shipped server pack (Phase 6) installs the same way with `-s server`.
+- **Telemetry mod:** `scripts/build-telemetry.sh` builds it and points the pack at the jar.
+
 ## Layout
 
 | Path | What |
