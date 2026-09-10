@@ -183,6 +183,11 @@ hash = "b8ba73d545a0deb9716610ebd1e6fb1cb6c4eae3f234aa7c1e43105eff0d4bc6"
 metafile = true
 
 [[files]]
+file = "mods/create-mechanical-extruder.pw.toml"
+hash = "6e064a3988937e06dfa307c8c395c73461819f9135197bc30563c6f13d1f1da4"
+metafile = true
+
+[[files]]
 file = "mods/create.pw.toml"
 hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true

@@ -61,3 +61,4 @@ machine count. Spark profile saved next to the machine-field one.
 | + FTB Quests | 2026-09-10 12:05 | 239.5 | 3.7 | 2.9 | 1325.2 | 453.0 | 10.0 | 58 |
 | + ProbeJS | 2026-09-10 12:09 | 256.7 | 3.1 | 2.3 | 1318.4 | 453.0 | 10.0 | 59 |
 | + Ars Elemancy (retest) | 2026-09-10 12:12 | 244.7 | 3.5 | 2.9 | 1751.6 | 453.0 | 10.0 | 60 |
+| + Mechanical Extruder (retest) | 2026-09-10 12:17 | 260.1 | 3.3 | 2.8 | 1401.6 | 453.0 | 10.0 | 61 |

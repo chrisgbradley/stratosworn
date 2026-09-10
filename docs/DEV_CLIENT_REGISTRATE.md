@@ -57,3 +57,19 @@ incompatible and stay rejected.
 A failure that reproduces across unrelated mods is a property of the pack, not of the mod
 under test. Three mods were rejected before the fourth made the pattern obvious; all three
 are being retested.
+
+## Aftermath of the retests
+
+With the ModernFix mixin off:
+
+| Mod | Result |
+|---|---|
+| FTB Quests | green |
+| Ars Elemancy 1.17 | green |
+| Aeronautics: Simulated Copycats 1.3.2 | still red, but a **different** failure |
+
+Simulated Copycats now fails on the server, not the client, and for an unrelated reason:
+Create's `AllAdvancements` initializes while its own items are still unbound, and the boot
+dies on `Trying to access unbound value: ResourceKey[minecraft:item / create:chocolate_bucket]`.
+That is a genuine load-order conflict with Create 6.0.10, not the ModernFix bug. It stays
+out; retry if either mod updates.
