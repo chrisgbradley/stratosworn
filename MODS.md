@@ -56,3 +56,5 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | cristel-lib | (auto-added with towns-and-towers) | both | Dependency. |
 | Explorer's Compass | 3.4.0 | both | Locate a structure a quest names. |
 | Nature's Compass | 3.4.0 | both | Locate a biome a quest names. |
+| Waystones | 21.1.44 | both | Tier-gated fast travel; island-to-island only at tier 4. |
+| balm | (auto-added with waystones) | both | Dependency. |
