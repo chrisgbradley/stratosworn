@@ -4,6 +4,7 @@ Every mod add, config change, and why. Newest first.
 
 ## 0.1.0 (in progress)
 
+- 2026-09-10: Phase 3 done. Added Noisium 2.3.0, Chunky 1.4.23, Lithium 0.15.4 (all green). Async chunk systems are off the table on this pack: C2ME (alpha packaging bug), Moonrise (Sable mixin crash), ScalableLux (Sable declares incompatible). Untested: ZGC vs G1 on the client (`runClientJoinZgc` exists), and the spark load test with 20 chunks of machines and 3 airships.
 - 2026-09-10: Rejected ScalableLux 0.3.0-alpha. Sable declares it incompatible (`Mod 'sable' is incompatible with 'scalablelux'`), server refuses to start. Lighting stays vanilla.
 - 2026-09-10: Rejected Moonrise 0.1.0-beta.15. Dedicated server crashed at boot: MixinApplyError applying Sable's `explosion.ExplosionMixin` after Moonrise's rewrite of the same code. Sable is required by Create Aeronautics, so Moonrise cannot ship. Noisium and Chunky stay as the chunk-gen relief.
 - 2026-09-10: Rejected C2ME 0.4.0-alpha.0.120. Dedicated server logged two RuntimeDistCleaner ERRORs (client classes `Options` and `LevelRenderer` loaded on DEDICATED_SERVER) and it force-disabled four ModernFix chunk options. Brief rule: remove on the first break. Revisit only on a non-alpha build.
