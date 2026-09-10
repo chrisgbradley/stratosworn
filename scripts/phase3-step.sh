@@ -25,6 +25,18 @@ if [ "$SIDE" != "client" ]; then
   echo "== restart detached server"; start_server || exit 2
 fi
 
+# Even for a client-only add, resync the server: a previous back-out can leave stale jars
+# there, and the client then bounces on a registry mismatch.
+if [ "$SIDE" = "client" ]; then
+  echo "== server resync (client-only add)"
+  BEFORE=$(ls server/mods | sort | md5sum)
+  python scripts/rcon.py stop >/dev/null 2>&1; sleep 5; stop_java server; sleep 2
+  (cd server && java -jar "$ROOT/tools/packwiz-installer-bootstrap.jar" -g -s server "$ROOT/pack/pack.toml" 2>&1 | grep -E "Downloaded|Removed|Finished|Failed" | tail -3)
+  AFTER=$(ls server/mods | sort | md5sum)
+  [ "$BEFORE" != "$AFTER" ] && echo "server mods changed"
+  start_server || exit 2
+fi
+
 echo "== client reinstall + relaunch"
 stop_java client; sleep 2
 bash scripts/client-install.sh 2>&1 | grep -E "Downloaded|Failed|Finished"
