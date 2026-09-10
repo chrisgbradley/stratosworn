@@ -68,3 +68,4 @@ machine count. Spark profile saved next to the machine-field one.
 | + Nature's Compass | 2026-09-10 12:49 | 261.0 | 3.0 | 3.0 | 1891.2 | 453.0 | 10.0 | 66 |
 | + Waystones | 2026-09-10 12:53 | 244.3 | 3.3 | 2.7 | 1833.8 | 453.0 | 10.0 | 69 |
 | + Cold Sweat (retest) | 2026-09-10 13:06 | 237.0 | 3.9 | 3.1 | 1763.2 | 453.0 | 10.0 | 70 |
+| + Numismatics (retry-aware) | 2026-09-10 13:11 | 257.4 | 4.4 | 2.9 | 1631.0 | 453.0 | 10.0 | 71 |
