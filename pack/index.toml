@@ -100,6 +100,11 @@ hash = "5995decc8738d7ddccec218dfa1ed95db9eca5bb64c98fd2cede8bf9bbc837c2"
 metafile = true
 
 [[files]]
+file = "mods/stratosworn-telemetry.pw.toml"
+hash = "ac3355054e7b75fb39c8e2726add1f0b64cc988f324c165e62cfce0c91dfbf26"
+metafile = true
+
+[[files]]
 file = "mods/tectonic.pw.toml"
 hash = "fef2f8085bbdf6d398b02c87225ad9ccf9cc5d71edde13cd18e12a154764c84e"
 metafile = true

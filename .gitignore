@@ -24,3 +24,4 @@
 .DS_Store
 Thumbs.db
 /tools/*.jar
+/pack/mods/stratosworn_telemetry-*.jar

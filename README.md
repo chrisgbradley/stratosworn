@@ -29,6 +29,19 @@ is built to look good at long range.
 3. If the change touches the client, launch the client and use the telemetry MCP `screenshot` and `perf` tools.
 4. Commit.
 
+## Prism dev instance
+
+Prism instance `Stratosworn (dev)` installs the pack from this repo on every launch through
+`packwiz-installer`. It needs the pack served locally first:
+
+```bash
+cd pack && packwiz serve
+```
+
+Then launch the instance in Prism. It pulls everything in `pack/index.toml` for the client
+side, including the dev-only telemetry mod (served from `pack/mods/`, never indexed, never
+exported). JVM: 8 GB G1, matching the decision for the shipped pack.
+
 ## Telemetry MCP
 
 After a client with the telemetry mod is running:

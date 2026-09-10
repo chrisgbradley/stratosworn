@@ -4,7 +4,10 @@ Client-only NeoForge 1.21.1 mod. Hosts an MCP server (Streamable HTTP) on
 `http://127.0.0.1:25590/mcp` using only `com.sun.net.httpserver` and the Gson that ships
 with Minecraft. Every game read runs on the client thread through `Minecraft.submit`.
 
-Dev tool only. `scripts/export.sh` strips it from release builds.
+Dev tool only. `scripts/export.sh` strips it from release builds. The pack references the built jar
+through `pack/mods/stratosworn-telemetry.pw.toml`, served by `packwiz serve` from `pack/mods/`
+(the jar itself is git-ignored and `.packwizignore`d). Rebuild, copy the jar to `pack/mods/`, and
+update the sha256 in the metafile after any change; `scripts/build-telemetry.sh` does all three.
 
 ## Build
 
