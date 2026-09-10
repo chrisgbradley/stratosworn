@@ -42,4 +42,4 @@ done
 n=$(grep -c "joined the game" server/logs/latest.log 2>/dev/null); [ "${n:-0}" -gt "$JOINS_BEFORE" ] || { echo "CLIENT never joined"; tail -5 telemetry/run/logs/latest.log | cut -c1-200; exit 3; }
 echo "== client log errors:"; grep -c "/ERROR]" telemetry/run/logs/latest.log; grep "/ERROR]" telemetry/run/logs/latest.log | head -5 | cut -c1-240
 for i in $(seq 1 30); do netstat -an | grep -q ":25590 .*LISTENING" && break; sleep 2; done
-echo "== perf"; python scripts/perf-sample.py --label "$LABEL" --samples 10
+echo "== perf"; python -u scripts/perf-sample.py --label "$LABEL" --samples 10 < /dev/null

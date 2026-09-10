@@ -6,7 +6,11 @@ when --label is given.
 
 Usage: python scripts/perf-sample.py --label "baseline" [--samples 10] [--spot "-61 180 -162 0 35"]
 """
-import argparse, json, os, subprocess, sys, threading, time, urllib.request, pathlib
+import faulthandler, sys
+# If anything wedges (seen when launched from a background shell), dump every thread's stack and exit.
+faulthandler.dump_traceback_later(150, exit=True, file=sys.stderr)
+import argparse, json, os, subprocess, threading, time, urllib.request, pathlib
+print("[perf] start", file=sys.stderr, flush=True)
 
 URL = "http://127.0.0.1:25590/mcp"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
