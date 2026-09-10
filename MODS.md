@@ -19,3 +19,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Iris | 1.8.14-beta.1 | client | Shader loader on Sodium. Beta is the only 1.21.1 NeoForge line. Ran clean; 261 FPS vs 320 without it, no shader pack loaded. |
 | FerriteCore | 7.0.3 | both | Memory. Client heap 1361 MB → 1068 MB at the sample spot, FPS unchanged. Server boot green. |
 | ModernFix | 5.27.24 | both | Load time and memory. Client load 58 s to in-game per its own log. Server boot green. |
+| Entity Culling | 1.10.5 | client | Skips rendering entities behind blocks. Neutral at the sample spot (85 entities); matters in machine halls and towns. Ran clean. |
