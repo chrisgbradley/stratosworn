@@ -25,6 +25,16 @@ while IFS='|' read -r src slug side label row; do
     bash scripts/phase3-step.sh "$slug" "$side" "$label" >> "$LOG" 2>&1 < /dev/null; rc=$?
   fi
 
+  # The dev client's mod loading is nondeterministic: Create's Registrate intermittently
+  # reports unused callbacks, and Create's AllAdvancements intermittently reads an unbound
+  # item. Both clear on a plain retry. Never call a client failure red on one sample.
+  tries=0
+  while [ $rc -eq 3 ] && [ $tries -lt 2 ]; do
+    tries=$((tries+1))
+    echo "#### $(date +%H:%M:%S) client retry $tries for $slug (known flaky loader)" >> "$LOG"
+    bash scripts/phase3-step.sh - "$side" "$label" >> "$LOG" 2>&1 < /dev/null; rc=$?
+  done
+
   if [ $rc -eq 2 ] && grep -q "Couldn't parse element" server/logs/latest.log 2>/dev/null \
      && ! grep "/ERROR]" server/logs/latest.log | grep -qv "Couldn't parse element"; then
     python scripts/loot-overrides.py server/logs/latest.log >> "$LOG" 2>&1
