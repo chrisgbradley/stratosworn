@@ -26,6 +26,7 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 
 ## Rejected after testing
 
+- create-encased (Foundry & Grimoire chain, see CHANGELOG).
 - create-connected (Foundry & Grimoire chain, see CHANGELOG).
 - C2ME 0.4.0-alpha (server ERRORs on dedicated dist, overrides ModernFix). See CHANGELOG.
 - Moonrise 0.1.0-beta.15 (crashes Sable's explosion mixin at server boot). See CHANGELOG.
