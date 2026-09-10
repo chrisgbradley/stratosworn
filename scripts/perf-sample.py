@@ -46,10 +46,22 @@ if __name__ == "__main__":
     time.sleep(a.settle)
     if not focused:
         focus()
-    reads = []
-    for _ in range(a.samples):
-        reads.append(tool("perf"))
+    # Only count reads taken with the window focused; Minecraft throttles when unfocused.
+    reads, tries, skipped = [], 0, 0
+    while len(reads) < a.samples and tries < a.samples * 6:
+        tries += 1
+        r = tool("perf")
+        if r.get("window_focused") is False or r.get("screen"):
+            skipped += 1
+            focus()
+            time.sleep(1.5)
+            continue
+        reads.append(r)
         time.sleep(1)
+    if len(reads) < a.samples:
+        print(f"[perf] only {len(reads)} focused reads after {tries} tries (skipped {skipped}); not recording", file=sys.stderr)
+        print(json.dumps({"label": a.label, "error": "unfocused", "focused_reads": len(reads)}))
+        sys.exit(1)
     def avg(key):
         vals = [r[key] for r in reads if isinstance(r.get(key), (int, float))]
         return round(sum(vals) / len(vals), 1) if vals else None
@@ -59,7 +71,7 @@ if __name__ == "__main__":
         "fps": avg("fps"), "frame_ms": avg("frame_time_ms"), "tick_ms": avg("server_tick_ms"),
         "heap_mb": avg("heap_used_mb"), "chunks": avg("loaded_chunks"), "entities": avg("entity_count"),
         "render_distance": reads[-1].get("render_distance"), "window": reads[-1].get("window"),
-        "focused": reads[-1].get("window_focused"), "mod_count": len(mods) if isinstance(mods, list) else None,
+        "focused": True, "skipped_unfocused": skipped, "mod_count": len(mods) if isinstance(mods, list) else None,
     }
     print(json.dumps(out))
     if a.label:
