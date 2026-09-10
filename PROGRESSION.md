@@ -1,8 +1,15 @@
-# Progression (draft 2)
+# Progression (draft 3)
 
 Spine: **Altitude Ladder** (tier sketch 3). Chapters: **Four Elements** (sketch 5). Tools:
 **Hybrid Tools** (sketch 4). Mod sets: High Country plus Foundry & Grimoire. RPG spine is
 an open question (see `docs/OPEN_QUESTIONS.md`); this doc gates only through recipes.
+
+> **Fixed in draft 3.** Draft 2 carried a circular dependency straight from tier sketch 5:
+> the blaze burner needed a fire glyph, fire glyphs cost cinder flour, and cinder flour comes
+> from a blaze burner. Nothing in that loop was obtainable. The peak shrine now supplies the
+> first Ignite glyph as loot, which the sketch already implied ("peak shrines hold tier 3
+> glyphs"). The design board draws circular dependencies in red so this class of bug shows up
+> before it reaches a script.
 
 Rules carried over from the tier sketches:
 
@@ -49,8 +56,9 @@ datapack loot table on peak structures).
 | Gate | Create side | Ars side | Item IDs |
 |---|---|---|---|
 | Attuned precision core | `create:precision_mechanism` passes through the enchanting apparatus with fire essence to become `stratosworn:attuned_core`; Aeronautics parts take the attuned core | | `create:precision_mechanism` |
-| Fire glyphs need burner ash | | Fire-school glyphs (`glyph_ignite`, `glyph_flare`, `glyph_smelt`, `glyph_explosion`) cost `create:cinder_flour` (blaze burner byproduct, verified) | |
-| Burners need a fire glyph | `create:blaze_burner` needs an Ars Ignite glyph in the recipe | | |
+| First Ignite is shrine loot | | `ars_nouveau:glyph_ignite` drops from a peak shrine and is **not craftable**. This is what breaks the deadlock below. | |
+| Burners need Ignite | `create:blaze_burner` needs `ars_nouveau:glyph_ignite` in the recipe | | |
+| Other fire glyphs need burner ash | | `glyph_flare`, `glyph_smelt`, `glyph_explosion` cost `create:cinder_flour`, a blaze burner byproduct | |
 | Archmage book needs a precision core | | `ars_nouveau:archmage_spell_book` takes the attuned core | |
 | Mechanical wrench | A brass-tier wrench that casts a bound spell on hit (KubeJS item + Ars API, or Ars Creo if it ships one) | | Ars Creo not yet in the pack; check its item list when added |
 
