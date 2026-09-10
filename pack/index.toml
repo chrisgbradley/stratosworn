@@ -9,6 +9,10 @@ file = "kubejs/data/copycats/physics_block_properties/copycat_catwalk.json"
 hash = "2788279d25e02824444aad41e360d501c74472aacac76578ef70a63252ac179f"
 
 [[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_amber_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
 file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_aqua_fan_dyeing_catalyst.json"
 hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
 
@@ -17,11 +21,27 @@ file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_beige_fan_dyein
 hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
 
 [[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_coral_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_forest_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
 file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_ginger_fan_dyeing_catalyst.json"
 hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
 
 [[files]]
 file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_indigo_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_maroon_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_mint_fan_dyeing_catalyst.json"
 hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
 
 [[files]]
@@ -116,6 +136,11 @@ metafile = true
 [[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "3b8895369640b2a52d3e05f7186185ba6798e44d513f11c5427a0fe9c16769e9"
+metafile = true
+
+[[files]]
+file = "mods/create-connected.pw.toml"
+hash = "6ac362d60bc8b13e03a5b6b9cdf9c7676f65d3e89e87c66f18514e7ee164cdb0"
 metafile = true
 
 [[files]]
