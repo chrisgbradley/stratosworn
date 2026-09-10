@@ -48,7 +48,7 @@ def build():
 
 def profile(seconds=60):
     # No --timeout: spark would auto-upload the result to spark.lucko.me when it fires.
-    print(rcon("neoforge tps", "execute if entity @e[type=create:contraption]"))
+    print(rcon("neoforge tps", "execute if entity @e[type=create:stationary_contraption]"))
     print(rcon("spark profiler start"))
     time.sleep(seconds)
     print(rcon("spark profiler stop --save-to-file"))
@@ -56,7 +56,7 @@ def profile(seconds=60):
 
 def clear():
     x1, z1 = X0 + CHUNKS_X * 16 - 1, Z0 + CHUNKS_Z * 16 - 1
-    print(rcon(f"kill @e[type=create:contraption]", f"fill {X0} {Y-1} {Z0} {x1} {Y+4} {z1} minecraft:air", f"forceload remove {X0} {Z0} {x1} {z1}"))
+    print(rcon(f"kill @e[type=create:stationary_contraption]", f"fill {X0} {Y-1} {Z0} {x1} {Y+4} {z1} minecraft:air", f"forceload remove {X0} {Z0} {x1} {z1}"))
 
 if __name__ == "__main__":
     {"build": build, "profile": profile, "clear": clear}[sys.argv[1]]()
