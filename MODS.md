@@ -26,6 +26,7 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 
 ## Rejected after testing
 
+- create-mechanical-extruder (Foundry & Grimoire chain, see CHANGELOG).
 - create-encased (Foundry & Grimoire chain, see CHANGELOG).
 - create-connected (Foundry & Grimoire chain, see CHANGELOG).
 - C2ME 0.4.0-alpha (server ERRORs on dedicated dist, overrides ModernFix). See CHANGELOG.

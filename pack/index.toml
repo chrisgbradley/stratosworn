@@ -9,6 +9,82 @@ file = "kubejs/data/copycats/physics_block_properties/copycat_catwalk.json"
 hash = "2788279d25e02824444aad41e360d501c74472aacac76578ef70a63252ac179f"
 
 [[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_aqua_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_beige_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_ginger_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_indigo_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_navy_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_olive_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_rose_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_slate_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_tan_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_teal_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_verdant_fan_dyeing_catalyst.json"
+hash = "84c0512f202a7d9c8112bbe93bc451ee0e1c426d3be071cbc81812e4024132bc"
+
+[[files]]
+file = "kubejs/data/createcasing/loot_table/blocks/brass_slicer.json"
+hash = "8ec8acd79efd72fb0bf6b709ff8835e80e927e9f18c9b0988ac80ca9df6e23cd"
+
+[[files]]
+file = "kubejs/data/createcasing/loot_table/blocks/copper_slicer.json"
+hash = "8ec8acd79efd72fb0bf6b709ff8835e80e927e9f18c9b0988ac80ca9df6e23cd"
+
+[[files]]
+file = "kubejs/data/createcasing/loot_table/blocks/creative_slicer.json"
+hash = "8ec8acd79efd72fb0bf6b709ff8835e80e927e9f18c9b0988ac80ca9df6e23cd"
+
+[[files]]
+file = "kubejs/data/createcasing/loot_table/blocks/industrial_iron_slicer.json"
+hash = "8ec8acd79efd72fb0bf6b709ff8835e80e927e9f18c9b0988ac80ca9df6e23cd"
+
+[[files]]
+file = "kubejs/data/createcasing/loot_table/blocks/railway_slicer.json"
+hash = "8ec8acd79efd72fb0bf6b709ff8835e80e927e9f18c9b0988ac80ca9df6e23cd"
+
+[[files]]
+file = "kubejs/data/createcasing/loot_table/blocks/refined_radiance_slicer.json"
+hash = "8ec8acd79efd72fb0bf6b709ff8835e80e927e9f18c9b0988ac80ca9df6e23cd"
+
+[[files]]
+file = "kubejs/data/createcasing/loot_table/blocks/shadow_steel_slicer.json"
+hash = "8ec8acd79efd72fb0bf6b709ff8835e80e927e9f18c9b0988ac80ca9df6e23cd"
+
+[[files]]
+file = "kubejs/data/createcasing/loot_table/blocks/weathered_iron_slicer.json"
+hash = "8ec8acd79efd72fb0bf6b709ff8835e80e927e9f18c9b0988ac80ca9df6e23cd"
+
+[[files]]
 file = "kubejs/data/createdeco/recipe/placard.json"
 hash = "3c0e10b61ad63e8afc430ac2d29c76b3e614576f135b206690f04986b5a22f42"
 
@@ -110,6 +186,11 @@ metafile = true
 [[files]]
 file = "mods/lithostitched.pw.toml"
 hash = "e95a7c54f936eda33a548766784f806aef2195204864a79e8535ce132c94e0f1"
+metafile = true
+
+[[files]]
+file = "mods/mechanicals-lib.pw.toml"
+hash = "c9e181185e3177d43fc9bd8d919288ac1bc0ce6b85e7049890f3eb231f5be10d"
 metafile = true
 
 [[files]]
