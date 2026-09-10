@@ -33,3 +33,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Create: Copycats+ | 3.0.9 | both | Copycat hull blocks; every community airship schematic uses them. Ships a bad Sable physics file for `copycat_catwalk`; overridden in `pack/kubejs/data`. |
 | Create Deco | 2.1.3 | both | Industrial decor: catwalks, windows, lamps. `placard` recipe uses a 1.21.2 ingredient form; overridden in `pack/kubejs/data`. |
 | KubeJS | 2101.7.2 | both | Scripts and the pack's datapack folder (`pack/kubejs/data`). Phase 4. Pulls Rhino and Better Advanced Tooltips. |
+| Create Enchantment Industry | 2.5.3b | both | Enchanting as a Create process. Replaces vanilla enchanting per the tier rules. |

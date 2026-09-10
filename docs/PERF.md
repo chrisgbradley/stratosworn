@@ -49,3 +49,4 @@ for ~60k blocks of ship. Player-built ships will be far smaller, but the design 
 follows: the number and size of simultaneously loaded ships is the server budget, not
 machine count. Spark profile saved next to the machine-field one.
 | + Copycats+, Create Deco, KubeJS | 2026-09-10 10:26 | 146.1 | 6.3 | 7.8 | 1450.4 | 233.1 | 13.2 | 43 |
+| + Create Enchantment Industry | 2026-09-10 10:32 | 239.0 | 3.6 | 3.7 | 1347.3 | 453.0 | 10.0 | 46 |
