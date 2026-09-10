@@ -113,6 +113,1110 @@ file = "kubejs/data/createdeco/recipe/placard.json"
 hash = "3c0e10b61ad63e8afc430ac2d29c76b3e614576f135b206690f04986b5a22f42"
 
 [[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_dead.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_dead_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_dead_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_fir.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_fir_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_fir_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_hellbark.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_hellbark_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_hellbark_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_jacaranda.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_jacaranda_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_jacaranda_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_magic.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_magic_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_magic_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_mahogany.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_mahogany_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_mahogany_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_palm.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_palm_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_palm_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_redwood.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_redwood_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_redwood_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_umbran.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_umbran_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_umbran_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_willow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_willow_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_willow_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_bluebright.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_bluebright_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_bluebright_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_dusk.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_dusk_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_dusk_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_frostbright.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_frostbright_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_frostbright_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_lunar.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_lunar_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_lunar_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_maple.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_maple_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_maple_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_starlit.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_starlit_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_blue_skies_starlit_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_aspen.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_aspen_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_aspen_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_baobab.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_baobab_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_baobab_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_blue_enchanted.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_blue_enchanted_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_blue_enchanted_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_bulbis.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_bulbis_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_bulbis_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_cika.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_cika_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_cika_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_cypress.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_cypress_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_cypress_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_ebony.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_ebony_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_ebony_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_embur.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_embur_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_embur_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_ether.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_ether_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_ether_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_fir.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_fir_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_fir_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_green_enchanted.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_green_enchanted_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_green_enchanted_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_holly.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_holly_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_holly_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_imparius.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_imparius_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_imparius_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_jacaranda.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_jacaranda_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_jacaranda_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_lament.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_lament_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_lament_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_mahogany.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_mahogany_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_mahogany_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_maple.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_maple_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_maple_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_nightshade.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_nightshade_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_nightshade_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_palm.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_palm_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_palm_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_pine.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_pine_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_pine_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_rainbow_eucalyptus.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_rainbow_eucalyptus_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_rainbow_eucalyptus_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_redwood.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_redwood_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_redwood_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_skyris.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_skyris_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_skyris_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_sythian.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_sythian_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_sythian_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_white_mangrove.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_white_mangrove_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_white_mangrove_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_willow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_willow_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_willow_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_witch_hazel.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_witch_hazel_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_witch_hazel_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_zelkova.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_zelkova_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_byg_zelkova_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_create_dd_rose.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_create_dd_rose_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_create_dd_rose_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_create_dd_rubber.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_create_dd_rubber_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_create_dd_rubber_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_create_dd_smoked.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_create_dd_smoked_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_create_dd_smoked_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_create_dd_spirit.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_create_dd_spirit_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_create_dd_spirit_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_hexcasting_edified.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_hexcasting_edified_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_hexcasting_edified_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_aspen.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_aspen_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_aspen_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_cypress.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_cypress_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_cypress_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_fir.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_fir_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_fir_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_ghaf.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_ghaf_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_ghaf_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_joshua.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_joshua_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_joshua_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_maple.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_maple_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_maple_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_olive.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_olive_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_olive_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_palo_verde.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_palo_verde_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_palo_verde_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_redwood.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_redwood_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_redwood_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_sugi.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_sugi_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_sugi_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_willow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_willow_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_willow_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_wisteria.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_wisteria_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_natures_spirit_wisteria_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_quark_ancient.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_quark_ancient_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_quark_ancient_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_quark_azalea.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_quark_azalea_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_quark_azalea_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_quark_blossom.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_quark_blossom_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_quark_blossom_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_acacia.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_acacia_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_acacia_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_ash.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_ash_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_ash_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_aspen.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_aspen_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_aspen_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_birch.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_birch_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_birch_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_blackwood.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_blackwood_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_blackwood_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_chestnut.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_chestnut_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_chestnut_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_douglas_fir.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_douglas_fir_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_douglas_fir_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_hickory.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_hickory_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_hickory_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_kapok.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_kapok_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_kapok_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_mangrove.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_mangrove_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_mangrove_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_maple.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_maple_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_maple_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_oak.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_oak_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_oak_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_palm.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_palm_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_palm_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_pine.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_pine_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_pine_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_rosewood.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_rosewood_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_rosewood_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_sequoia.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_sequoia_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_sequoia_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_spruce.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_spruce_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_spruce_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_sycamore.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_sycamore_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_sycamore_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_white_cedar.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_white_cedar_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_white_cedar_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_willow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_willow_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_tfc_willow_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_canopy.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_canopy_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_canopy_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_darkwood.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_darkwood_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_darkwood_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_mangrove.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_mangrove_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_mangrove_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_minewood.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_minewood_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_minewood_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_sortingwood.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_sortingwood_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_sortingwood_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_timewood.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_timewood_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_timewood_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_transwood.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_transwood_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_transwood_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_twilight_oak.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_twilight_oak_narrow.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
+file = "kubejs/data/railways/loot_table/blocks/track_twilightforest_twilight_oak_wide.json"
+hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
+
+[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "657a01a86bbf8617e4726c77df08f708e43a3db12db74b837eebd8eb1d93faae"
 metafile = true
@@ -185,6 +1289,11 @@ metafile = true
 [[files]]
 file = "mods/create-mechanical-extruder.pw.toml"
 hash = "6e064a3988937e06dfa307c8c395c73461819f9135197bc30563c6f13d1f1da4"
+metafile = true
+
+[[files]]
+file = "mods/create-steam-n-rails-1.21.1.pw.toml"
+hash = "80332cead695f1e3c27e99133a48709767d1106f836792bb2fc4d594b88f1a68"
 metafile = true
 
 [[files]]

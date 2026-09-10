@@ -1,0 +1,5 @@
+{
+  "_comment": "Override: railways ships this loot table for an optional-compat block that is not registered in this pack; the original fails to parse at load.",
+  "type": "minecraft:block",
+  "pools": []
+}

@@ -73,3 +73,29 @@ Create's `AllAdvancements` initializes while its own items are still unbound, an
 dies on `Trying to access unbound value: ResourceKey[minecraft:item / create:chocolate_bucket]`.
 That is a genuine load-order conflict with Create 6.0.10, not the ModernFix bug. It stays
 out; retry if either mod updates.
+
+## Second dev-client-only failure: Numismatics
+
+Create: Numismatics 1.1.0 boots the server green but cannot construct on the Gradle dev
+client:
+
+```
+Failed to create mod instance. ModID: numismatics
+java.lang.IllegalArgumentException: Illegal character in opaque part at index 2:
+  C:\Users\chris\Workspace\stratosworn\telemetry\build\moddev\clientJoinLog4j2.xml
+  at dev.ithundxr.createnumismatics.neoforge.NumismaticsImpl.restoreLoggers(NumismaticsImpl.java:112)
+```
+
+Numismatics calls `URI.create()` on whatever `log4j2.configurationFile` holds. ModDevGradle
+sets that to a bare Windows path, which is not a valid URI; a real launcher passes a proper
+one. Nothing to do with the pack.
+
+**Fix:** the dev-client run configs set `log4j2.configurationFile` to a `file:///` URI so
+the dev client matches a real launcher.
+
+## Standing lesson
+
+The Gradle dev client has now produced two false negatives of its own (this, and the
+ModernFix interaction that only surfaced there first). Treat a green server plus a failing
+dev client as *unproven*, not as a rejection, and confirm on the Prism instance before
+writing a mod off.
