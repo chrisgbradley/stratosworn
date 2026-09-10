@@ -41,3 +41,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 - ScalableLux 0.3.0-alpha (Sable declares it incompatible). See CHANGELOG.
 | Create Connected | 1.3.3 | both | Kinetic parts that finish contraption logistics. Dye Depot compat loot tables overridden. |
 | Create Encased | 1.9.0 | both | Encased cogs and shafts. Slicer compat loot tables overridden. |
+| Not Enough Glyphs | 4.6.1 | both | Enough glyphs that each chapter has its own. |
