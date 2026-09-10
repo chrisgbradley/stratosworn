@@ -29,3 +29,6 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 - C2ME 0.4.0-alpha (server ERRORs on dedicated dist, overrides ModernFix). See CHANGELOG.
 - Moonrise 0.1.0-beta.15 (crashes Sable's explosion mixin at server boot). See CHANGELOG.
 - ScalableLux 0.3.0-alpha (Sable declares it incompatible). See CHANGELOG.
+| Create: Copycats+ | 3.0.9 | both | Copycat hull blocks; every community airship schematic uses them. Ships a bad Sable physics file for `copycat_catwalk`; overridden in `pack/kubejs/data`. |
+| Create Deco | 2.1.3 | both | Industrial decor: catwalks, windows, lamps. `placard` recipe uses a 1.21.2 ingredient form; overridden in `pack/kubejs/data`. |
+| KubeJS | 2101.7.2 | both | Scripts and the pack's datapack folder (`pack/kubejs/data`). Phase 4. Pulls Rhino and Better Advanced Tooltips. |

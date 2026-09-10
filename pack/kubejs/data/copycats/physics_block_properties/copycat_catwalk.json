@@ -1,0 +1,8 @@
+{
+  "_comment": "Override. Copycats+ 3.0.9 ships this file selecting copycats:copycat_catwalk, which is an item, not a block; Sable logs an ERROR at every load. Point it at the board it wraps until upstream fixes it.",
+  "selector": "copycats:copycat_board",
+  "properties": {
+    "sable:mass": 0.25,
+    "sable:volume": 0.25
+  }
+}

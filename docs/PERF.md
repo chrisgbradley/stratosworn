@@ -48,3 +48,4 @@ Assembled physics hulls are the dominant server cost in this pack: roughly 25 ms
 for ~60k blocks of ship. Player-built ships will be far smaller, but the design rule
 follows: the number and size of simultaneously loaded ships is the server budget, not
 machine count. Spark profile saved next to the machine-field one.
+| + Copycats+, Create Deco, KubeJS | 2026-09-10 10:26 | 146.1 | 6.3 | 7.8 | 1450.4 | 233.1 | 13.2 | 43 |

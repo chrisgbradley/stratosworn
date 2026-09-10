@@ -4,6 +4,7 @@ Every mod add, config change, and why. Newest first.
 
 ## 0.1.0 (in progress)
 
+- 2026-09-10: Added Copycats+ 3.0.9, Create Deco 2.1.3, KubeJS 2101.7.2 (+ Rhino, Better Advanced Tooltips). Two upstream data bugs fixed with overrides in `pack/kubejs/data`: Copycats+'s `physics_block_properties/copycat_catwalk.json` selects an item (Sable ERROR on every load), now selects `copycat_board`; Create Deco's `placard` recipe used the 1.21.2 `{"id"}` ingredient form, now `{"item"}`. Boot green with the overrides.
 - 2026-09-10: Local test world split: `server/world-ships` keeps the assembled airships for perf; the boot loop runs on a fresh `server/world`. The pasted schematics carry stale block-entity NBT (`create:analog_lever`, `create:pulse_extender`, `simulated:throttle_lever`) that logs ERRORs on chunk load and would fail every scan.
 - 2026-09-10: Airship load test with four assembled community hulls (~60k blocks total): 29.7 ms/tick at 20 TPS on the dev box, versus 3.2 ms for the 20-chunk machine field. Sable physics hulls, not machines, set the server budget. See `docs/PERF.md`.
 - 2026-09-10: First launch from a real launcher: Prism instance `Stratosworn (dev)` installed the pack via packwiz-installer pre-launch, Christian's account joined the local server, telemetry answered from that client. Pre-launch command must be set through Prism's dialog (`"$INST_JAVA" -jar ...`), hand-edited cfg loses the space.

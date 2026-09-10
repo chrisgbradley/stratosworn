@@ -1,0 +1,11 @@
+{
+  "_comment": "Override. Create Deco 2.1.3 uses the 1.21.2+ ingredient form {\"id\": ...}, which 1.21.1 cannot parse. Same recipe with the 1.21.1 form.",
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dye_placard",
+  "ingredients": [
+    { "tag": "createdeco:placards" },
+    { "item": "minecraft:white_dye" }
+  ],
+  "result": { "count": 1, "id": "create:placard" }
+}
