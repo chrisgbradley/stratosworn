@@ -77,7 +77,7 @@ def scan():
     errors = [l for l in text.splitlines() if "/ERROR]" in l or " ERROR " in l]
     # Real mixin failures only. Refmap notices and annotation-class lookups during scanning are WARN noise.
     mixin = [l for l in text.splitlines() if re.search(
-        r"MixinApplyError|MixinTransformerError|InvalidMixinException|InjectionError|Mixin apply failed|failed to apply|Critical injection failure|Mixin.*could not be applied", l, re.I)]
+        r"MixinApplyError|MixinTransformerError|InvalidMixinException|InjectionError|Mixin apply failed|Mixin .*failed to apply|Critical injection failure|Mixin.*could not be applied", l, re.I)]
     warns = [l for l in text.splitlines() if "/WARN]" in l]
     print(f"[scan] lines={len(text.splitlines())} ERROR={len(errors)} mixin-failures={len(mixin)} WARN={len(warns)}")
     for l in errors[:40]: print("  E " + l[:300])

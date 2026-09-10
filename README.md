@@ -46,6 +46,11 @@ Tooling: Java 21, Go (for `go install github.com/packwiz/packwiz@latest`), Pytho
 
 ## Test loop
 
+The local server keeps two worlds: `server/world` (fresh, seed `stratosworn`, what the boot
+loop scans) and `server/world-ships` (four assembled community airships for perf runs; its
+pasted schematics carry stale block-entity data that logs ERRORs at load, so it never goes
+through the scan). Swap the folder names to run a perf session on the ships.
+
 1. Change one thing.
 2. `scripts/boot-server.sh` — headless NeoForge boot; `latest.log` must have no ERROR lines and no mixin failures.
 3. If the change touches the client, launch the client and use the telemetry MCP `screenshot` and `perf` tools.
