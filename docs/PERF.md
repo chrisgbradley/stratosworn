@@ -30,3 +30,21 @@ contraptions. Measured with `neoforge tps`; spark profile saved to `server/confi
 Headroom against the 50 ms budget is large. Not yet covered: item processing on belts, and
 airships (Aeronautics physics contraptions run through Sable, a different cost model than
 bearing contraptions). Those need a hand-built base and hull.
+
+### Airships (real Sable physics), 2026-09-10
+
+Christian pasted and physics-assembled four community schematics on the local server
+(Culverin-class air cruiser ~20.7k blocks, Large Airship ~5.7k, Tilted Tiltrotor ~650,
+Wanderer orbital station ~33.7k; several decor blocks missing, hulls intact). One player
+connected from Prism.
+
+| State | TPS | ms/tick (overall) | Entities |
+|---|---|---|---|
+| Player online, before pasting | 20.0 | ~4 | ~90 |
+| Schematics pasted, not assembled | 20.0 | 8.8 | 243 |
+| Four ships assembled, hovering | 20.0 | 29.7 | 281 |
+
+Assembled physics hulls are the dominant server cost in this pack: roughly 25 ms per tick
+for ~60k blocks of ship. Player-built ships will be far smaller, but the design rule
+follows: the number and size of simultaneously loaded ships is the server budget, not
+machine count. Spark profile saved next to the machine-field one.
