@@ -4,7 +4,7 @@ Production server for Stratosworn. Provided by Christian 2026-09-10.
 
 | | |
 |---|---|
-| Machine | Bare metal, Ubuntu 24.04 LTS (kernel 6.8), LAN 192.168.1.55 |
+| Machine | Bare metal, Ubuntu 24.04 LTS (kernel 6.8) |
 | CPU | Dual Xeon E5-2687W v4, 24c/48t, 3.5 GHz max, 2 NUMA nodes (~32 GB each) |
 | RAM | 62 GB, 8 GB swapfile |
 | Root disk | LVM on a 465 GB 7200 RPM WD HDD, ~74% full |
@@ -31,4 +31,4 @@ Production server for Stratosworn. Provided by Christian 2026-09-10.
   view distance only after the spark load test shows headroom at 20 TPS.
 - **Chunky pregeneration** runs once on this host before players join (radius to be
   set with the world border), on the NVMe.
-- The LAN IP stays out of the pack files. Only this doc mentions it.
+- The LAN address is deliberately not in this repo.
