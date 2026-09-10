@@ -24,3 +24,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | spark | 1.10.124 | server | Profiler for the 20-chunks-of-machines test. Server boot green; no client change. |
 
 Rejected after testing: C2ME 0.4.0-alpha (server ERRORs on dedicated dist, overrides ModernFix). See CHANGELOG.
+| Noisium | 2.3.0 | server | Faster worldgen noise. Tectonic and Terralith are noise-heavy. Boot green. |

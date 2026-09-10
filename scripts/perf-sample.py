@@ -6,7 +6,7 @@ when --label is given.
 
 Usage: python scripts/perf-sample.py --label "baseline" [--samples 10] [--spot "-61 180 -162 0 35"]
 """
-import argparse, json, subprocess, sys, time, urllib.request, pathlib
+import argparse, json, os, subprocess, sys, threading, time, urllib.request, pathlib
 
 URL = "http://127.0.0.1:25590/mcp"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -51,7 +51,12 @@ $ok
         return False
     return out.endswith("True")
 
+def log(msg):
+    print(f"[perf] {msg}", file=sys.stderr, flush=True)
+
 if __name__ == "__main__":
+    # Hard watchdog: nothing here should take more than a few minutes. os._exit skips any wedged wait.
+    threading.Timer(240, lambda: (log("WATCHDOG: sampler exceeded 240 s, aborting"), os._exit(4))).start()
     ap = argparse.ArgumentParser()
     ap.add_argument("--label")
     ap.add_argument("--samples", type=int, default=10)
@@ -59,12 +64,16 @@ if __name__ == "__main__":
     ap.add_argument("--settle", type=int, default=25, help="seconds to wait for chunks/LODs")
     a = ap.parse_args()
 
+    log("focus + pin window")
     focused = focus()  # bounded; also pins the window size so samples compare
+    log(f"focused={focused}; spectator + teleport")
     tool("run_command", {"command": "gamemode spectator", "wait_ms": 300})
     x, y, z, yaw, pitch = a.spot.split()
     tool("run_command", {"command": f"tp Dev {x} {y} {z} {yaw} {pitch}", "wait_ms": 300})
     tool("perf")  # subscribes to tick samples
+    log(f"settling {a.settle} s")
     time.sleep(a.settle)
+    log("sampling")
     # Focus is best-effort (the desktop is shared). A read only needs no menu open; with
     # pauseOnLostFocus:false the game keeps rendering unfocused. Focus state is recorded, not required.
     reads, tries, skipped = [], 0, 0
@@ -94,10 +103,11 @@ if __name__ == "__main__":
         "render_distance": reads[-1].get("render_distance"), "window": reads[-1].get("window"),
         "focused_reads": f"{focused_reads}/{len(reads)}", "mod_count": len(mods) if isinstance(mods, list) else None,
     }
-    print(json.dumps(out))
+    print(json.dumps(out), flush=True)
     if a.label:
         p = ROOT / "docs" / "PERF.md"
         if not p.exists():
             p.write_text("# Perf samples\n\nSame spot, spectator, 16 chunks, DH 128, window pinned to 1920x1080 outer size, vsync off. `scripts/perf-sample.py`.\n\n| Label | When | FPS | Frame ms | Tick ms | Heap MB | Chunks | Entities | Mods |\n|---|---|---|---|---|---|---|---|---|\n", encoding="utf-8")
         with p.open("a", encoding="utf-8") as f:
             f.write(f"| {out['label']} | {out['at']} | {out['fps']} | {out['frame_ms']} | {out['tick_ms']} | {out['heap_mb']} | {out['chunks']} | {out['entities']} | {out['mod_count']} |\n")
+    os._exit(0)
