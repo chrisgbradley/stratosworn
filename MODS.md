@@ -20,3 +20,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | FerriteCore | 7.0.3 | both | Memory. Client heap 1361 MB → 1068 MB at the sample spot, FPS unchanged. Server boot green. |
 | ModernFix | 5.27.24 | both | Load time and memory. Client load 58 s to in-game per its own log. Server boot green. |
 | Entity Culling | 1.10.5 | client | Skips rendering entities behind blocks. Neutral at the sample spot (85 entities); matters in machine halls and towns. Ran clean. |
+| ImmediatelyFast | 1.6.13 | client | Batches HUD, text, and entity draw calls. Neutral at the sample spot; helps with EMI panels and dense text. Ran clean. |
