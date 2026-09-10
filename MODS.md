@@ -1,8 +1,6 @@
 # Mods
-
 One line per mod. Side is what packwiz installs: `client`, `server`, or `both`.
 Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
-
 | Mod | Version | Side | Why |
 |---|---|---|---|
 | Create | 6.0.10 (create-1.21.1-6.0.10.jar) | both | The industrial tree. Rotation, contraptions, brass, precision. Aeronautics depends on it. |
@@ -22,10 +20,12 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Entity Culling | 1.10.5 | client | Skips rendering entities behind blocks. Neutral at the sample spot (85 entities); matters in machine halls and towns. Ran clean. |
 | ImmediatelyFast | 1.6.13 | client | Batches HUD, text, and entity draw calls. Neutral at the sample spot; helps with EMI panels and dense text. Ran clean. |
 | spark | 1.10.124 | server | Profiler for the 20-chunks-of-machines test. Server boot green; no client change. |
-
-Rejected after testing: C2ME 0.4.0-alpha (server ERRORs on dedicated dist, overrides ModernFix). See CHANGELOG.
 | Noisium | 2.3.0 | server | Faster worldgen noise. Tectonic and Terralith are noise-heavy. Boot green. |
 | Chunky | 1.4.23 | server | World pregeneration so runtime chunk gen is rare on the fixed 4-player world. Boot green. |
-Rejected after testing: Moonrise 0.1.0-beta.15 (crashes Sable's explosion mixin at server boot). See CHANGELOG.
-Rejected after testing: ScalableLux 0.3.0-alpha (Sable declares it incompatible). See CHANGELOG.
 | Lithium | 0.15.4 | both | General tick optimization. Boot green. |
+
+## Rejected after testing
+
+- C2ME 0.4.0-alpha (server ERRORs on dedicated dist, overrides ModernFix). See CHANGELOG.
+- Moonrise 0.1.0-beta.15 (crashes Sable's explosion mixin at server boot). See CHANGELOG.
+- ScalableLux 0.3.0-alpha (Sable declares it incompatible). See CHANGELOG.
