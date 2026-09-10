@@ -4,6 +4,7 @@ Every mod add, config change, and why. Newest first.
 
 ## 0.1.0 (in progress)
 
+- 2026-09-10: Rejected Moonrise 0.1.0-beta.15. Dedicated server crashed at boot: MixinApplyError applying Sable's `explosion.ExplosionMixin` after Moonrise's rewrite of the same code. Sable is required by Create Aeronautics, so Moonrise cannot ship. Noisium and Chunky stay as the chunk-gen relief.
 - 2026-09-10: Rejected C2ME 0.4.0-alpha.0.120. Dedicated server logged two RuntimeDistCleaner ERRORs (client classes `Options` and `LevelRenderer` loaded on DEDICATED_SERVER) and it force-disabled four ModernFix chunk options. Brief rule: remove on the first break. Revisit only on a non-alpha build.
 - 2026-09-10: Phase 3 perf floor complete: Sodium, Iris, FerriteCore, ModernFix, Entity Culling, ImmediatelyFast, spark. Client target (60 FPS at 16 render + DH 128) is met with margin on the RTX 2070 dev box: 304 FPS at the sample spot. Server 20 TPS with 4 players is untested; needs the spark load test.
 - 2026-09-09: Phase 3 perf floor, one at a time, measured with `scripts/perf-sample.py` (table in `docs/PERF.md`): Sodium 0.8.13 (client), Iris 1.8.14-beta.1 (client), FerriteCore 7.0.3 (both). All ran clean. The only client ERROR lines in every run are EMI reporting untranslated Aeronautics tag names; cosmetic, upstream lang gap, tracked for a lang override later.
