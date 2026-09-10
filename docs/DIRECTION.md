@@ -2,7 +2,7 @@
 
 Christian's picks from the mod-set proposals (2026-09-09): **High Country** as the spine,
 **Foundry & Grimoire** for the two trees, and **Sky Trade** for the economy. Plus an RPG
-layer (Path of Exile passive tree or RuneScape skills; one, not both).
+layer: a Path of Exile style passive tree (Pufferfish's Skills), decided 2026-09-10.
 
 They do not conflict. They answer three different questions:
 
@@ -39,7 +39,7 @@ They do not conflict. They answer three different questions:
 3. **Town types per tier.** Towns and Towers plus IDAS structures assigned to altitude
    bands, so a "peak town" is a real thing the datapack places.
 4. **Contract source.** Bountiful boards in towns, or FTB Quests reward tables. Pick one.
-5. **RPG spine.** Passive tree or skill levels. Decides whether gates are nodes or levels.
+5. ~~RPG spine.~~ Decided 2026-09-10: passive tree (Pufferfish's Skills). Gates are nodes.
 
 ## Custom content is allowed
 
