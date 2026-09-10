@@ -26,15 +26,9 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 
 ## Rejected after testing
 
-- simulated-copycats (Foundry & Grimoire chain, see CHANGELOG).
-- ssrd (Foundry & Grimoire chain, see CHANGELOG).
-- ars-elemancy (Foundry & Grimoire chain, see CHANGELOG).
-- not-enough-glyphs (Foundry & Grimoire chain, see CHANGELOG).
-- ars-ocultas (Foundry & Grimoire chain, see CHANGELOG).
-- ars-additions (Foundry & Grimoire chain, see CHANGELOG).
-- create-mechanical-extruder (Foundry & Grimoire chain, see CHANGELOG).
-- create-encased (Foundry & Grimoire chain, see CHANGELOG).
-- create-connected (Foundry & Grimoire chain, see CHANGELOG).
+- Ars Ocultas 2.6.1: requires Occultism (excluded second magic path).
+- Ars Additions 21.3.0: manifest is 1.21.0-only ([1.21,1.21.1)); breaks Create block registration on 1.21.1.
+- Create Mechanical Extruder 2.2.2: client crashes in Create's Registrate with it loaded; server was green. See CHANGELOG.
 - C2ME 0.4.0-alpha (server ERRORs on dedicated dist, overrides ModernFix). See CHANGELOG.
 - Moonrise 0.1.0-beta.15 (crashes Sable's explosion mixin at server boot). See CHANGELOG.
 - ScalableLux 0.3.0-alpha (Sable declares it incompatible). See CHANGELOG.
