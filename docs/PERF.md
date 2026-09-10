@@ -65,3 +65,4 @@ machine count. Spark profile saved next to the machine-field one.
 | + Steam n Rails | 2026-09-10 12:31 | 253.2 | 3.5 | 2.6 | 1895.4 | 453.0 | 10.0 | 62 |
 | + Towns and Towers | 2026-09-10 12:36 | 258.5 | 3.2 | 2.8 | 1501.6 | 453.0 | 10.0 | 64 |
 | + Explorer's Compass | 2026-09-10 12:45 | 230.0 | 3.4 | 3.0 | 2133.3 | 453.0 | 10.0 | 65 |
+| + Nature's Compass | 2026-09-10 12:49 | 261.0 | 3.0 | 3.0 | 1891.2 | 453.0 | 10.0 | 66 |
