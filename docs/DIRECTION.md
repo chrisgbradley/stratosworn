@@ -41,6 +41,14 @@ They do not conflict. They answer three different questions:
 4. **Contract source.** Bountiful boards in towns, or FTB Quests reward tables. Pick one.
 5. **RPG spine.** Passive tree or skill levels. Decides whether gates are nodes or levels.
 
+## Custom content is allowed
+
+Christian (2026-09-09): datapacks, new items, new recipes, structure-generation rules, and
+a custom mod are all on the table when they make the pack cohesive. So `stratosworn:*`
+items in `PROGRESSION.md` are real registrations, not placeholders. Order of preference:
+datapack JSON, then KubeJS startup scripts (items, blocks, tags), then a small content mod
+next to `telemetry/` only when neither can do it (custom block entities, physics hooks).
+
 ## Build order
 
 Skeleton (done) → world (Tectonic, Terralith, DH, custom biomes) → perf floor (in progress)
