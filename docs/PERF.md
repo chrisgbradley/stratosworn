@@ -71,3 +71,20 @@ machine count. Spark profile saved next to the machine-field one.
 | + Numismatics (retry-aware) | 2026-09-10 13:11 | 257.4 | 4.4 | 2.9 | 1631.0 | 453.0 | 10.0 | 71 |
 | + Moonlight | 2026-09-10 13:15 | 209.5 | 4.4 | 2.9 | 1845.2 | 453.0 | 10.0 | 73 |
 | + Zeta | 2026-09-10 13:19 | 251.5 | 3.5 | 2.6 | 1777.8 | 453.0 | 10.0 | 74 |
+
+### Real client (Prism), 2026-09-10
+
+Full pack, 54 mods (74 loaded counting bundled libraries), Christian's account joining the
+local server in survival, desert spawn, render distance 12, vsync on (Prism defaults).
+
+| Reading | Value |
+|---|---|
+| FPS | 58 to 60 (vsync-capped; frame time 6.7 ms implies ~150 uncapped) |
+| Server tick | 14.0 ms with 152 entities and one player |
+| Client heap | 1.6 GB of 8 GB |
+| Client ERROR lines | 2, both FTB Teams complaining the local player id is not in the known-players list |
+
+The FTB Teams errors are an artifact of the local server running `online-mode=false`: the
+real client identifies with its authenticated UUID while the offline server assigns a
+different one. DS001 runs online mode, so this does not apply there. No Create/Registrate
+failure on the real client, second clean load out of two.

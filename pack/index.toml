@@ -113,42 +113,6 @@ file = "kubejs/data/createdeco/recipe/placard.json"
 hash = "3c0e10b61ad63e8afc430ac2d29c76b3e614576f135b206690f04986b5a22f42"
 
 [[files]]
-file = "kubejs/data/idas/loot_table/chests/dread_citadel/dread_citadel.json"
-hash = "1b0eb679a27907874a70aa61b0d309316e920a8cdd490957340082d3fbfff818"
-
-[[files]]
-file = "kubejs/data/idas/loot_table/chests/dread_citadel/dread_citadel_library.json"
-hash = "1b0eb679a27907874a70aa61b0d309316e920a8cdd490957340082d3fbfff818"
-
-[[files]]
-file = "kubejs/data/idas/loot_table/chests/dread_citadel/dread_citadel_throne.json"
-hash = "1b0eb679a27907874a70aa61b0d309316e920a8cdd490957340082d3fbfff818"
-
-[[files]]
-file = "kubejs/data/idas/loot_table/chests/haunted_manor/if_haunted_manor.json"
-hash = "1b0eb679a27907874a70aa61b0d309316e920a8cdd490957340082d3fbfff818"
-
-[[files]]
-file = "kubejs/data/idas/loot_table/chests/labyrinth/if_labyrinth_tomb.json"
-hash = "1b0eb679a27907874a70aa61b0d309316e920a8cdd490957340082d3fbfff818"
-
-[[files]]
-file = "kubejs/data/idas/tags/worldgen/biome/has_structure/bopmohogany_biomes.json"
-hash = "a2ee4b03d7fa255d234857d942a2c0bef15dbdb758dfc304087f2d09af6abff1"
-
-[[files]]
-file = "kubejs/data/idas/tags/worldgen/biome/has_structure/bopredwood_biomes.json"
-hash = "a2ee4b03d7fa255d234857d942a2c0bef15dbdb758dfc304087f2d09af6abff1"
-
-[[files]]
-file = "kubejs/data/idas/tags/worldgen/biome/has_structure/byg_redwood_biomes.json"
-hash = "a2ee4b03d7fa255d234857d942a2c0bef15dbdb758dfc304087f2d09af6abff1"
-
-[[files]]
-file = "kubejs/data/idas/tags/worldgen/biome/has_structure/bygmohogany_biomes.json"
-hash = "a2ee4b03d7fa255d234857d942a2c0bef15dbdb758dfc304087f2d09af6abff1"
-
-[[files]]
 file = "kubejs/data/railways/loot_table/blocks/track_biomesoplenty_dead.json"
 hash = "847e5a14c93ccf315341e735fb04ff620c31d935f60c4ad387b6c569e086c2f1"
 
