@@ -1,6 +1,8 @@
-# Resolved: ModernFix registry_event_progress vs Create's Registrate
+# Open: intermittent Create/Registrate failure during client mod loading
 
-**Root cause found 2026-09-10.** `mixin.feature.registry_event_progress` in ModernFix mixes
+**Superseded. The ModernFix theory below is WRONG; see "Correction" at the end.**
+
+Originally recorded as root cause 2026-09-10: `mixin.feature.registry_event_progress` in ModernFix mixes
 into NeoForge's `GameData.postWithProgressBar` to draw a progress bar during registration.
 With it enabled, Create's Registrate intermittently reports unused callbacks and the client
 dies during mod loading. `pack/config/modernfix-mixins.properties` now ships with it off,
@@ -99,3 +101,42 @@ The Gradle dev client has now produced two false negatives of its own (this, and
 ModernFix interaction that only surfaced there first). Treat a green server plus a failing
 dev client as *unproven*, not as a rejection, and confirm on the Prism instance before
 writing a mod off.
+
+## Correction (2026-09-10, later)
+
+The ModernFix theory does not hold. With `mixin.feature.registry_event_progress=false`
+confirmed active in the client log ("overriden (by user configuration) to 'false'") and the
+ModernFix mixin absent from the stack, Create: Numismatics still failed with the identical
+`Found unused register callbacks`. The stack is now plain
+`GameData.postRegisterEvents -> Create.onRegister -> AbstractRegistrate.onRegister`.
+
+So the three mods that passed right after the config change (FTB Quests, Ars Elemancy,
+Mechanical Extruder) passed by luck, not because of the fix. **The failure is
+nondeterministic**, which also explains why Simulated Copycats failed twice with two
+different errors.
+
+Two symptoms, probably one cause:
+
+- `Found unused register callbacks` from Create's Registrate
+- `Trying to access unbound value: ResourceKey[minecraft:item / create:chocolate_bucket]`
+  from Create's `AllAdvancements`
+
+Both are Create's registration racing something during parallel mod loading. Create addons
+register callbacks into Create's own Registrate instance, so the more Create addons the pack
+carries, the more often it trips.
+
+### Consequence for the test loop
+
+A single red client boot no longer proves a mod is at fault, and a single green one no
+longer proves it is fine. Until the cause is found, the loop needs either a repeat count or
+a way to make loading deterministic.
+
+### Next step
+
+Raise the Registrate logger to DEBUG on the dev client. Registrate names the unused
+callbacks at DEBUG ("see logs"), and that names the mod and registry actually involved
+instead of guessing from the mods list.
+
+The `registry_event_progress=false` override stays in the pack for now: it is a
+loading-screen progress bar, costs nothing to lose, and has not been shown to hurt. It is
+not a fix and is not documented as one.

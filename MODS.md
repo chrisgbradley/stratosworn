@@ -58,3 +58,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Nature's Compass | 3.4.0 | both | Locate a biome a quest names. |
 | Waystones | 21.1.44 | both | Tier-gated fast travel; island-to-island only at tier 4. |
 | balm | (auto-added with waystones) | both | Dependency. |
+| Cold Sweat | 2.4.2 | both | Temperature. Altitude is cold, the High Country travel gate. |
