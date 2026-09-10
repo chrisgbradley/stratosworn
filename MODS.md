@@ -54,3 +54,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Steam 'n' Rails (NeoForge port) | 0.3.0-beta.2 | both | Ground freight for the valley tier, before flight exists. Community port, beta. |
 | Towns and Towers | 1.13.11 | both | Villages worth flying to. Sky Trade destinations. |
 | cristel-lib | (auto-added with towns-and-towers) | both | Dependency. |
+| Explorer's Compass | 3.4.0 | both | Locate a structure a quest names. |

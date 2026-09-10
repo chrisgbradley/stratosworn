@@ -1327,6 +1327,11 @@ hash = "4fbe037c1ec3570be84f68e075c3e8293b15f64dda22bca4735924705fb38236"
 metafile = true
 
 [[files]]
+file = "mods/explorers-compass.pw.toml"
+hash = "0670ca65c7208aa8211883fae30c935f53cad38196aac46723b10e7bbc695113"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
 metafile = true
