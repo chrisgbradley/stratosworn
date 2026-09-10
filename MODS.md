@@ -35,7 +35,8 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 
 - Ars Ocultas 2.6.1: requires Occultism (excluded second magic path).
 - Ars Additions 21.3.0: manifest is 1.21.0-only ([1.21,1.21.1)); breaks Create block registration on 1.21.1.
-- Create Mechanical Extruder 2.2.2: client crashes in Create's Registrate with it loaded; server was green. See CHANGELOG.
+- Create Mechanical Extruder 2.2.2: client crashes in Create's Registrate ("Found unused register callbacks"); server boots green. See CHANGELOG.
+- Aeronautics: Simulated Copycats 1.3.2: same Registrate client crash, reproduced on a clean run. Server green. Retry if either mod updates.
 - C2ME 0.4.0-alpha (server ERRORs on dedicated dist, overrides ModernFix). See CHANGELOG.
 - Moonrise 0.1.0-beta.15 (crashes Sable's explosion mixin at server boot). See CHANGELOG.
 - ScalableLux 0.3.0-alpha (Sable declares it incompatible). See CHANGELOG.
