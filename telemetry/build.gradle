@@ -41,6 +41,10 @@ neoForge {
             logLevel = org.slf4j.event.Level.INFO
             // Matches the launcher profile the pack will ship with: G1GC, 8G heap (decision 2026-09-10: G1, 8-12 GB both sides).
             jvmArguments.addAll '-Xms2G', '-Xmx8G', '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=40', '-XX:+UnlockExperimentalVMOptions', '-XX:G1NewSizePercent=20', '-XX:G1ReservePercent=20'
+            // ModDevGradle sets log4j2.configurationFile to a bare Windows path, which is not a
+            // valid URI; mods that call URI.create() on it (Numismatics) then fail to construct.
+            // A real launcher passes a URI, so make the dev client match.
+            systemProperty 'log4j2.configurationFile', project.file("build/moddev/${name}Log4j2.xml").toURI().toString()
         }
     }
 
