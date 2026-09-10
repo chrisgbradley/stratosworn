@@ -27,3 +27,4 @@ Rejected after testing: C2ME 0.4.0-alpha (server ERRORs on dedicated dist, overr
 | Noisium | 2.3.0 | server | Faster worldgen noise. Tectonic and Terralith are noise-heavy. Boot green. |
 | Chunky | 1.4.23 | server | World pregeneration so runtime chunk gen is rare on the fixed 4-player world. Boot green. |
 Rejected after testing: Moonrise 0.1.0-beta.15 (crashes Sable's explosion mixin at server boot). See CHANGELOG.
+Rejected after testing: ScalableLux 0.3.0-alpha (Sable declares it incompatible). See CHANGELOG.
