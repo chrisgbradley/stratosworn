@@ -23,6 +23,13 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Noisium | 2.3.0 | server | Faster worldgen noise. Tectonic and Terralith are noise-heavy. Boot green. |
 | Chunky | 1.4.23 | server | World pregeneration so runtime chunk gen is rare on the fixed 4-player world. Boot green. |
 | Lithium | 0.15.4 | both | General tick optimization. Boot green. |
+| Create: Copycats+ | 3.0.9 | both | Copycat hull blocks; every community airship schematic uses them. Ships a bad Sable physics file for `copycat_catwalk`; overridden in `pack/kubejs/data`. |
+| Create Deco | 2.1.3 | both | Industrial decor: catwalks, windows, lamps. `placard` recipe uses a 1.21.2 ingredient form; overridden in `pack/kubejs/data`. |
+| KubeJS | 2101.7.2 | both | Scripts and the pack's datapack folder (`pack/kubejs/data`). Phase 4. Pulls Rhino and Better Advanced Tooltips. |
+| Create Enchantment Industry | 2.5.3b | both | Enchanting as a Create process. Replaces vanilla enchanting per the tier rules. |
+| Ars Creo | 5.4.0 | both | The Create and Ars bridge. One bridge per cross-link. |
+| Create: Dragons Plus | 1.11.8b | both | Dependency of Create Enchantment Industry (auto-added by packwiz). |
+| Mechanicals Lib | (pulled by Enchantment Industry) | both | Library dependency of Create Enchantment Industry. |
 
 ## Rejected after testing
 
@@ -32,8 +39,3 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 - C2ME 0.4.0-alpha (server ERRORs on dedicated dist, overrides ModernFix). See CHANGELOG.
 - Moonrise 0.1.0-beta.15 (crashes Sable's explosion mixin at server boot). See CHANGELOG.
 - ScalableLux 0.3.0-alpha (Sable declares it incompatible). See CHANGELOG.
-| Create: Copycats+ | 3.0.9 | both | Copycat hull blocks; every community airship schematic uses them. Ships a bad Sable physics file for `copycat_catwalk`; overridden in `pack/kubejs/data`. |
-| Create Deco | 2.1.3 | both | Industrial decor: catwalks, windows, lamps. `placard` recipe uses a 1.21.2 ingredient form; overridden in `pack/kubejs/data`. |
-| KubeJS | 2101.7.2 | both | Scripts and the pack's datapack folder (`pack/kubejs/data`). Phase 4. Pulls Rhino and Better Advanced Tooltips. |
-| Create Enchantment Industry | 2.5.3b | both | Enchanting as a Create process. Replaces vanilla enchanting per the tier rules. |
-| Ars Creo | 5.4.0 | both | The Create and Ars bridge. One bridge per cross-link. |
