@@ -52,3 +52,4 @@ machine count. Spark profile saved next to the machine-field one.
 | + Create Enchantment Industry | 2026-09-10 10:32 | 239.0 | 3.6 | 3.7 | 1347.3 | 453.0 | 10.0 | 46 |
 | + Ars Creo | 2026-09-10 10:45 | 243.8 | 3.7 | 3.1 | 1258.8 | 453.0 | 10.0 | 48 |
 | + Create Connected | 2026-09-10 10:57 | 229.7 | 4.2 | 2.7 | 1248.2 | 453.0 | 10.0 | 49 |
+| + Create Encased | 2026-09-10 11:00 | 227.7 | 3.7 | 3.0 | 1300.3 | 453.0 | 10.0 | 50 |

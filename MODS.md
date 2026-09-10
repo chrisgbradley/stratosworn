@@ -40,3 +40,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 - Moonrise 0.1.0-beta.15 (crashes Sable's explosion mixin at server boot). See CHANGELOG.
 - ScalableLux 0.3.0-alpha (Sable declares it incompatible). See CHANGELOG.
 | Create Connected | 1.3.3 | both | Kinetic parts that finish contraption logistics. Dye Depot compat loot tables overridden. |
+| Create Encased | 1.9.0 | both | Encased cogs and shafts. Slicer compat loot tables overridden. |
