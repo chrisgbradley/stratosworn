@@ -101,7 +101,7 @@ metafile = true
 
 [[files]]
 file = "mods/stratosworn-telemetry.pw.toml"
-hash = "168939d222d798320f4c79a4fe8d1566676d8be10f19fa6f1c5b4386c9bc7f42"
+hash = "d20d4908f89987936415c119e98ac3b10bf98d9d59d47ed7d98e6066562786aa"
 metafile = true
 
 [[files]]
