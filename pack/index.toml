@@ -1302,6 +1302,11 @@ hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true
 
 [[files]]
+file = "mods/cristel-lib.pw.toml"
+hash = "08a334ae5565e122d26b819cba16ce784776a10fe100ab2b22de72a5a2bac653"
+metafile = true
+
+[[files]]
 file = "mods/curios.pw.toml"
 hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
 metafile = true
@@ -1434,4 +1439,9 @@ metafile = true
 [[files]]
 file = "mods/terralith.pw.toml"
 hash = "da7ee99189ad35aac094919fe33cac647d98533b23c228f10d4811f08989e2b8"
+metafile = true
+
+[[files]]
+file = "mods/towns-and-towers.pw.toml"
+hash = "a9afe82b3d1b4975dd9f8b3272898450aeb29365678b3779059977301f88c101"
 metafile = true

@@ -52,3 +52,5 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Ars Elemancy | 1.17 | both | Element-flavored spells on Ars Elemental. Four Elements chapters. |
 | Create Mechanical Extruder | 2.2.2 | both | Stone generation a water glyph can feed. |
 | Steam 'n' Rails (NeoForge port) | 0.3.0-beta.2 | both | Ground freight for the valley tier, before flight exists. Community port, beta. |
+| Towns and Towers | 1.13.11 | both | Villages worth flying to. Sky Trade destinations. |
+| cristel-lib | (auto-added with towns-and-towers) | both | Dependency. |

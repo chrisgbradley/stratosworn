@@ -63,3 +63,4 @@ machine count. Spark profile saved next to the machine-field one.
 | + Ars Elemancy (retest) | 2026-09-10 12:12 | 244.7 | 3.5 | 2.9 | 1751.6 | 453.0 | 10.0 | 60 |
 | + Mechanical Extruder (retest) | 2026-09-10 12:17 | 260.1 | 3.3 | 2.8 | 1401.6 | 453.0 | 10.0 | 61 |
 | + Steam n Rails | 2026-09-10 12:31 | 253.2 | 3.5 | 2.6 | 1895.4 | 453.0 | 10.0 | 62 |
+| + Towns and Towers | 2026-09-10 12:36 | 258.5 | 3.2 | 2.8 | 1501.6 | 453.0 | 10.0 | 64 |
