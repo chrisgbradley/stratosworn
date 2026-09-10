@@ -26,6 +26,7 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 
 ## Rejected after testing
 
+- ars-ocultas (Foundry & Grimoire chain, see CHANGELOG).
 - ars-additions (Foundry & Grimoire chain, see CHANGELOG).
 - create-mechanical-extruder (Foundry & Grimoire chain, see CHANGELOG).
 - create-encased (Foundry & Grimoire chain, see CHANGELOG).
