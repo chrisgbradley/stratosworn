@@ -1,6 +1,13 @@
-# Open defect: dev-client Registrate crash
+# Resolved: ModernFix registry_event_progress vs Create's Registrate
 
-Three unrelated mods fail the same way and only on the Gradle dev client
+**Root cause found 2026-09-10.** `mixin.feature.registry_event_progress` in ModernFix mixes
+into NeoForge's `GameData.postWithProgressBar` to draw a progress bar during registration.
+With it enabled, Create's Registrate intermittently reports unused callbacks and the client
+dies during mod loading. `pack/config/modernfix-mixins.properties` now ships with it off,
+and FTB Quests, which reproduced the crash every time, loads clean. The feature is purely a
+loading-screen progress bar, so nothing is lost.
+
+Originally filed as: four unrelated mods fail the same way and only on the Gradle dev client
 (`telemetry/gradlew runClientJoin`, launch target `forgeclientdev`):
 
 | Mod | Server boot | Dev client |
@@ -8,6 +15,7 @@ Three unrelated mods fail the same way and only on the Gradle dev client
 | Create Mechanical Extruder 2.2.2 | green | crash |
 | Aeronautics: Simulated Copycats 1.3.2 | green | crash |
 | Ars Elemancy 1.17 | green | crash |
+| FTB Quests (CurseForge) | green | crash |
 
 Crash, identical in all three:
 
@@ -37,9 +45,15 @@ The real client. Every one of these was judged on the Gradle dev client, which u
 `forgeclientdev` launch target and loads the telemetry mod from the Gradle classpath rather
 than from `mods/`. The Prism instance has never seen any of the three.
 
-## Next step
+## Original next step (superseded)
 
 Add all three to the pack, launch the Prism instance once, and see whether it loads. If it
 does, the dev client is not a valid client-test surface for Registrate-based addons and the
 loop should launch Prism instead. If it crashes the same way, the three are genuinely
 incompatible and stay rejected.
+
+## Lesson for the loop
+
+A failure that reproduces across unrelated mods is a property of the pack, not of the mod
+under test. Three mods were rejected before the fourth made the pattern obvious; all three
+are being retested.
