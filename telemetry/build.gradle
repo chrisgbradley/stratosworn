@@ -36,20 +36,11 @@ neoForge {
             systemProperty 'stratosworn.telemetry.port', '25590'
             programArguments.addAll '--quickPlayMultiplayer', '127.0.0.1:25565'
         }
-        // ZGC variant of the joining client, for the G1 vs ZGC comparison the brief asks for.
-        clientJoinZgc {
-            client()
-            systemProperty 'stratosworn.telemetry.port', '25590'
-            programArguments.addAll '--quickPlayMultiplayer', '127.0.0.1:25565'
-            jvmArguments.addAll '-Xms2G', '-Xmx8G', '-XX:+UseZGC', '-XX:+ZGenerational'
-        }
         configureEach {
             systemProperty 'forge.logging.markers', 'REGISTRIES'
             logLevel = org.slf4j.event.Level.INFO
-            // Matches the launcher profile the pack will ship with: 8G heap, G1GC. ZGC variant above.
-            if (name != 'clientJoinZgc') {
-                jvmArguments.addAll '-Xms2G', '-Xmx8G', '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=40', '-XX:+UnlockExperimentalVMOptions', '-XX:G1NewSizePercent=20', '-XX:G1ReservePercent=20'
-            }
+            // Matches the launcher profile the pack will ship with: G1GC, 8G heap (decision 2026-09-10: G1, 8-12 GB both sides).
+            jvmArguments.addAll '-Xms2G', '-Xmx8G', '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=40', '-XX:+UnlockExperimentalVMOptions', '-XX:G1NewSizePercent=20', '-XX:G1ReservePercent=20'
         }
     }
 

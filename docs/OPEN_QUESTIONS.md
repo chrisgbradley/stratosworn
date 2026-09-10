@@ -2,6 +2,11 @@
 
 From the brief, plus what came up while building. Answers change what gets built next.
 
+## Answered
+
+- **JVM (2026-09-10):** G1GC, 8 to 12 GB heap, on both client and server. ZGC not tested and not needed.
+- **Terrain (2026-09-10):** Tectonic plus Terralith.
+
 ## From the brief
 
 1. **Server host and CPU/RAM budget.** Sets the production JVM args and the mod count.
@@ -22,8 +27,7 @@ From the brief, plus what came up while building. Answers change what gets built
    `packwiz-installer` step.
 7. **RPG spine.** Passive tree (Pufferfish's Skills, Path of Exile feel) or skill levels
    (Project MMO, RuneScape feel). One, not both. See the RPG layer in the mod-set artifact.
-8. **Tectonic alone vs Tectonic + Terralith.** Both boot. Needs a look at the terrain
-   from the air before picking. Terralith adds biome count and client load.
+8. ~~Tectonic alone vs Tectonic + Terralith.~~ Answered: both.
 9. **Bridge mod.** Ars Creo and Create Ars Nouveau both exist. Each cross-link recipe should
    use one, not both.
 10. **Disk.** C: is at 98% (about 10 GB free). Gradle caches, the server, and client assets
