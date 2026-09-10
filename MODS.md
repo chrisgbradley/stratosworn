@@ -46,3 +46,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Ars Elemental | 0.7.10.1 (CurseForge; no Modrinth build for 1.21.1) | both | Element-school glyphs and spells. The Four Elements chapters depend on it. |
 | FTB Library | (CurseForge) | both | Base library for the FTB suite. Phase 5. |
 | architectury-api | (auto-added with ftb-library-forge) | both | Dependency. |
+| FTB Teams | (CurseForge) | both | Team scoping for quest progress. Phase 5. |
