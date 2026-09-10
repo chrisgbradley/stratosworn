@@ -59,6 +59,8 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>" && git push -q origin mas
     comm -13 <(echo "$before") <(echo "$after") | sed 's#.*/##; s#\.pw\.toml##' \
       | while read -r d; do (cd pack && packwiz remove "$d" -y >/dev/null 2>&1); echo "#### backed out $d" >> "$LOG"; done
     (cd pack && packwiz refresh >/dev/null 2>&1)
+    # resync the server folder now, or the backed-out jar stays loaded until the next boot loop
+    (cd server && java -jar ../tools/packwiz-installer-bootstrap.jar -g -s server ../pack/pack.toml >/dev/null 2>&1)
     git checkout -q -- MODS.md 2>/dev/null
     git add -A; git commit -q -m "pack: back out $slug (red boot)
 
