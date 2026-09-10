@@ -17,12 +17,11 @@ cd stratosworn
 
 Tooling: Java 21, Go (for `go install github.com/packwiz/packwiz@latest`), Python 3.12.
 
-- **Client (Prism):** create a NeoForge 1.21.1 instance and set the pre-launch command to
-  `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar -g -s client <pack URL>/pack.toml`, with
-  `packwiz-installer-bootstrap.jar` in the instance's `.minecraft`. If you edit `instance.cfg`
-  by hand, the whole value must be one quoted string with the inner quotes escaped:
-  `PreLaunchCommand="\"$INST_JAVA\" -jar ..."`, or Prism drops the space after the Java path. The pack URL is
-  `https://raw.githubusercontent.com/chrisgbradley/stratosworn/master/pack/pack.toml`; for local dev, `scripts/serve.sh` serves this checkout instead.
+- **Client (Prism):** create a NeoForge 1.21.1 instance, put `packwiz-installer-bootstrap.jar`
+  in its `.minecraft`, and in Settings > Custom commands set the pre-launch command to
+  `java -jar packwiz-installer-bootstrap.jar -g -s client <pack URL>/pack.toml` (Java 21 on PATH).
+  Avoid `"$INST_JAVA"` in a hand-edited `instance.cfg`: Prism's parser drops the quotes and the
+  space after the path. Set it through the dialog.
 - **Server:** `server/` is a local NeoForge install for the boot loop (`scripts/boot-server.py`).
   The shipped server pack (Phase 6) installs the same way with `-s server`.
 - **Telemetry mod:** `scripts/build-telemetry.sh` builds it and points the pack at the jar.
