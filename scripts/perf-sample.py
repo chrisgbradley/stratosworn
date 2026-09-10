@@ -25,8 +25,24 @@ def tool(name, args=None):
     except Exception:
         return {"raw": txt}
 
+WIN_W, WIN_H = 1920, 1080
+
 def focus():
-    ps = "$w=New-Object -ComObject WScript.Shell; $ok=$w.AppActivate('Minecraft'); Start-Sleep -Milliseconds 600; if($ok){$w.SendKeys('{ESC}')}; $ok"
+    """Bring the game window to the front, unpause, and pin it to a fixed size so samples compare."""
+    ps = r"""
+Add-Type @'
+using System; using System.Runtime.InteropServices;
+public class W { [DllImport("user32.dll")] public static extern bool SetWindowPos(IntPtr h, IntPtr a, int x, int y, int cx, int cy, uint f);
+                 [DllImport("user32.dll")] public static extern bool ShowWindow(IntPtr h, int n); }
+'@
+$p = Get-Process java -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowTitle -like 'Minecraft*' } | Select-Object -First 1
+if (-not $p) { 'False'; exit }
+[W]::ShowWindow($p.MainWindowHandle, 9) | Out-Null
+[W]::SetWindowPos($p.MainWindowHandle, [IntPtr]::Zero, 0, 0, %d, %d, 0x0040) | Out-Null
+$w = New-Object -ComObject WScript.Shell; $ok = $w.AppActivate($p.Id); Start-Sleep -Milliseconds 600
+if ($ok) { $w.SendKeys('{ESC}') }
+$ok
+""" % (WIN_W, WIN_H)
     out = subprocess.run(["powershell", "-NoProfile", "-Command", ps], capture_output=True, text=True).stdout.strip()
     return out.endswith("True")
 
@@ -77,6 +93,6 @@ if __name__ == "__main__":
     if a.label:
         p = ROOT / "docs" / "PERF.md"
         if not p.exists():
-            p.write_text("# Perf samples\n\nSame spot, spectator, 16 chunks, DH 128, 1920x1080, vsync off. `scripts/perf-sample.py`.\n\n| Label | When | FPS | Frame ms | Tick ms | Heap MB | Chunks | Entities | Mods |\n|---|---|---|---|---|---|---|---|---|\n", encoding="utf-8")
+            p.write_text("# Perf samples\n\nSame spot, spectator, 16 chunks, DH 128, window pinned to 1920x1080 outer size, vsync off. `scripts/perf-sample.py`.\n\n| Label | When | FPS | Frame ms | Tick ms | Heap MB | Chunks | Entities | Mods |\n|---|---|---|---|---|---|---|---|---|\n", encoding="utf-8")
         with p.open("a", encoding="utf-8") as f:
             f.write(f"| {out['label']} | {out['at']} | {out['fps']} | {out['frame_ms']} | {out['tick_ms']} | {out['heap_mb']} | {out['chunks']} | {out['entities']} | {out['mod_count']} |\n")

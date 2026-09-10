@@ -15,3 +15,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Lithostitched | (pulled by Tectonic) | both | Worldgen library Tectonic depends on. Version pinned in `pack/mods/lithostitched.pw.toml`. |
 | Tectonic | 3.0.26 | both | Terrain with real height. Tested alone first per the brief. |
 | Distant Horizons | 3.2.0-b | client | Long-range LODs. The look the brief asks for. Client only; server skips it. |
+| Sodium | 0.8.13 (mc1.21.1-0.8.13-neoforge) | client | Renderer. Client ran clean alongside Sable/Veil, Aeronautics, DH. Perf table in `docs/PERF.md`. |
