@@ -273,6 +273,11 @@ hash = "70bfb904ce4f816c1111e42640c877400a8e15e6e4d15fa06d8ba4c1856f4214"
 metafile = true
 
 [[files]]
+file = "mods/probejs.pw.toml"
+hash = "9ea823bd03ce9811c59d00646203f5cb8560a7dacd9352f4b5e6865f7d05fcfd"
+metafile = true
+
+[[files]]
 file = "mods/rhino.pw.toml"
 hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
 metafile = true
