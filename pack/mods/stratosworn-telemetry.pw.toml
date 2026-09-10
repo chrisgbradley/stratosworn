@@ -1,4 +1,4 @@
-# Dev-only telemetry mod (client). Served from the repo by `packwiz serve` on localhost:8080.
+# Dev-only telemetry mod (client). Served from pack/mods by scripts/serve.sh on localhost:8081 (packwiz serve only serves indexed files).
 # scripts/export.sh removes this file from release exports. Replace the URL with a GitHub
 # release asset once the repo is published.
 name = "Stratosworn Telemetry"
@@ -11,6 +11,6 @@ default = true
 description = "Dev-only MCP telemetry server on 127.0.0.1:25590. Never in a release."
 
 [download]
-url = "http://localhost:8080/mods/stratosworn_telemetry-0.1.0.jar"
+url = "http://localhost:8081/stratosworn_telemetry-0.1.0.jar"
 hash-format = "sha256"
 hash = "200a0ba1eeaf5f1436b4bee25060bc6652d421a1af4e83f744cd23cd32a8cacf"

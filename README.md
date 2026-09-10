@@ -35,8 +35,10 @@ Prism instance `Stratosworn (dev)` installs the pack from this repo on every lau
 `packwiz-installer`. It needs the pack served locally first:
 
 ```bash
-cd pack && packwiz serve
+scripts/serve.sh
 ```
+
+That runs `packwiz serve` on 8080 and a static server for the dev-only telemetry jar on 8081.
 
 Then launch the instance in Prism. It pulls everything in `pack/index.toml` for the client
 side, including the dev-only telemetry mod (served from `pack/mods/`, never indexed, never
