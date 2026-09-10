@@ -35,8 +35,7 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 
 - Ars Ocultas 2.6.1: requires Occultism (excluded second magic path).
 - Ars Additions 21.3.0: manifest is 1.21.0-only ([1.21,1.21.1)); breaks Create block registration on 1.21.1.
-- Create Mechanical Extruder 2.2.2: client crashes in Create's Registrate ("Found unused register callbacks"); server boots green. See CHANGELOG.
-- Aeronautics: Simulated Copycats 1.3.2: same Registrate client crash, reproduced on a clean run. Server green. Retry if either mod updates.
+- Create Mechanical Extruder 2.2.2, Aeronautics: Simulated Copycats 1.3.2, Ars Elemancy 1.17: all three boot the server green and all three crash the **Gradle dev client** identically in Create's Registrate. Unconfirmed on the real client. See `docs/DEV_CLIENT_REGISTRATE.md`.
 - C2ME 0.4.0-alpha (server ERRORs on dedicated dist, overrides ModernFix). See CHANGELOG.
 - Moonrise 0.1.0-beta.15 (crashes Sable's explosion mixin at server boot). See CHANGELOG.
 - ScalableLux 0.3.0-alpha (Sable declares it incompatible). See CHANGELOG.
@@ -45,3 +44,5 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Not Enough Glyphs | 4.6.1 | both | Enough glyphs that each chapter has its own. |
 | Separate Sable Render Distance | 1.8.6 | client | Airships render out to Distant Horizons range. Requires Sodium, so client-only. High Country must-have. |
 | Ars Elemental | 0.7.10.1 (CurseForge; no Modrinth build for 1.21.1) | both | Element-school glyphs and spells. The Four Elements chapters depend on it. |
+| FTB Library | (CurseForge) | both | Base library for the FTB suite. Phase 5. |
+| architectury-api | (auto-added with ftb-library-forge) | both | Dependency. |
