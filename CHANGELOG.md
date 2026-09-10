@@ -4,6 +4,7 @@ Every mod add, config change, and why. Newest first.
 
 ## 0.1.0 (in progress)
 
+- 2026-09-10: `docs/HOST.md` records DS001 (dual Xeon E5-2687W v4, 62 GB, NVMe at /mnt/nvme, AMP). Production JVM: `-Xms12G -Xmx12G` G1 with the Aikar set, instance on the NVMe, optional NUMA pin.
 - 2026-09-10: Answers from Christian: host is DS001 under AMP; 4-6 players (usually 1-2); shaders ship (Complementary, Bliss); hard mode; passive tree RPG spine; one bridge mod per link; GitHub repo and Prism install coming today. `max-players` will be 6 in the shipped server pack.
 - 2026-09-10: Decisions from Christian: G1GC with 8 to 12 GB heap on both client and server (local test server now `-Xmx8G`; the shipped start script and launcher profile will use `-Xmx8G` minimum, `-Xmx12G` recommended); world is Tectonic + Terralith. ZGC run config removed.
 - 2026-09-10: Phase 3 done. Added Noisium 2.3.0, Chunky 1.4.23, Lithium 0.15.4 (all green). Async chunk systems are off the table on this pack: C2ME (alpha packaging bug), Moonrise (Sable mixin crash), ScalableLux (Sable declares incompatible). Untested: ZGC vs G1 on the client (`runClientJoinZgc` exists), and the spark load test with 20 chunks of machines and 3 airships.
