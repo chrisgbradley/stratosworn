@@ -47,3 +47,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | FTB Library | (CurseForge) | both | Base library for the FTB suite. Phase 5. |
 | architectury-api | (auto-added with ftb-library-forge) | both | Dependency. |
 | FTB Teams | (CurseForge) | both | Team scoping for quest progress. Phase 5. |
+| FTB Quests | (CurseForge) | both | The quest book. Phase 5. |
