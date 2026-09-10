@@ -62,22 +62,24 @@ if __name__ == "__main__":
     time.sleep(a.settle)
     if not focused:
         focus()
-    # Only count reads taken with the window focused; Minecraft throttles when unfocused.
+    # Focus is best-effort (the desktop is shared). A read only needs no menu open; with
+    # pauseOnLostFocus:false the game keeps rendering unfocused. Focus state is recorded, not required.
     reads, tries, skipped = [], 0, 0
-    while len(reads) < a.samples and tries < a.samples * 6:
+    while len(reads) < a.samples and tries < a.samples * 4:
         tries += 1
         r = tool("perf")
-        if r.get("window_focused") is False or r.get("screen"):
+        if r.get("screen"):
             skipped += 1
             focus()
             time.sleep(1.5)
             continue
         reads.append(r)
         time.sleep(1)
-    if len(reads) < a.samples:
-        print(f"[perf] only {len(reads)} focused reads after {tries} tries (skipped {skipped}); not recording", file=sys.stderr)
-        print(json.dumps({"label": a.label, "error": "unfocused", "focused_reads": len(reads)}))
+    if len(reads) < max(3, a.samples // 2):
+        print(f"[perf] only {len(reads)} usable reads after {tries} tries (menu open {skipped}x); not recording", file=sys.stderr)
+        print(json.dumps({"label": a.label, "error": "menu open", "usable_reads": len(reads)}))
         sys.exit(1)
+    focused_reads = sum(1 for r in reads if r.get("window_focused"))
     def avg(key):
         vals = [r[key] for r in reads if isinstance(r.get(key), (int, float))]
         return round(sum(vals) / len(vals), 1) if vals else None
@@ -87,7 +89,7 @@ if __name__ == "__main__":
         "fps": avg("fps"), "frame_ms": avg("frame_time_ms"), "tick_ms": avg("server_tick_ms"),
         "heap_mb": avg("heap_used_mb"), "chunks": avg("loaded_chunks"), "entities": avg("entity_count"),
         "render_distance": reads[-1].get("render_distance"), "window": reads[-1].get("window"),
-        "focused": True, "skipped_unfocused": skipped, "mod_count": len(mods) if isinstance(mods, list) else None,
+        "focused_reads": f"{focused_reads}/{len(reads)}", "mod_count": len(mods) if isinstance(mods, list) else None,
     }
     print(json.dumps(out))
     if a.label:

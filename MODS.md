@@ -17,3 +17,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Distant Horizons | 3.2.0-b | client | Long-range LODs. The look the brief asks for. Client only; server skips it. |
 | Sodium | 0.8.13 (mc1.21.1-0.8.13-neoforge) | client | Renderer. Client ran clean alongside Sable/Veil, Aeronautics, DH. Perf table in `docs/PERF.md`. |
 | Iris | 1.8.14-beta.1 | client | Shader loader on Sodium. Beta is the only 1.21.1 NeoForge line. Ran clean; 261 FPS vs 320 without it, no shader pack loaded. |
+| FerriteCore | 7.0.3 | both | Memory. Client heap 1361 MB → 1068 MB at the sample spot, FPS unchanged. Server boot green. |

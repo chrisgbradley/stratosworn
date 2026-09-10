@@ -32,8 +32,8 @@ for i in $(seq 1 20); do netstat -an | grep -q ":25590 .*LISTENING" || break; sl
 netstat -an | grep -q ":25590 .*LISTENING" && { echo "old client still holds 25590"; exit 3; }
 JOINS_BEFORE=$(grep -c "joined the game" server/logs/latest.log 2>/dev/null || echo 0)
 rm -f telemetry/run/logs/latest.log
-# Fully detached (own process group) so this script's task can finish while the game keeps running.
-powershell -NoProfile -Command "Start-Process -FilePath '$WROOT\telemetry\gradlew.bat' -ArgumentList 'runClientJoin','--console=plain' -WorkingDirectory '$WROOT\telemetry' -WindowStyle Hidden -RedirectStandardOutput \"\$env:TEMP\stratos-client.out\" -RedirectStandardError \"\$env:TEMP\stratos-client.err\""
+# Detached with every fd redirected, so the game inherits no handle from this script (a held pipe keeps the task alive).
+(cd telemetry && nohup ./gradlew runClientJoin --console=plain > "$TEMP/stratos-client.out" 2> "$TEMP/stratos-client.err" < /dev/null & disown) 2>/dev/null
 for i in $(seq 1 120); do
   [ "$(grep -c "joined the game" server/logs/latest.log 2>/dev/null || echo 0)" -gt "$JOINS_BEFORE" ] && break
   grep -qE "has crashed|Exception in thread \"main\"|BUILD FAILED" telemetry/run/logs/latest.log "$TEMP/stratos-client.out" 2>/dev/null && { echo "CLIENT RED"; grep -m5 -E "has crashed|Exception|Caused by" telemetry/run/logs/latest.log | cut -c1-240; exit 3; }
