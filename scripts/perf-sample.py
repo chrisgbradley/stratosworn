@@ -43,7 +43,12 @@ $w = New-Object -ComObject WScript.Shell; $ok = $w.AppActivate($p.Id); Start-Sle
 if ($ok) { $w.SendKeys('{ESC}') }
 $ok
 """ % (WIN_W, WIN_H)
-    out = subprocess.run(["powershell", "-NoProfile", "-Command", ps], capture_output=True, text=True).stdout.strip()
+    try:
+        out = subprocess.run(["powershell", "-NoProfile", "-Command", ps], capture_output=True, text=True,
+                             timeout=20, stdin=subprocess.DEVNULL).stdout.strip()
+    except subprocess.TimeoutExpired:
+        print("[perf] focus helper timed out; continuing unfocused", file=sys.stderr)
+        return False
     return out.endswith("True")
 
 if __name__ == "__main__":
@@ -54,14 +59,12 @@ if __name__ == "__main__":
     ap.add_argument("--settle", type=int, default=25, help="seconds to wait for chunks/LODs")
     a = ap.parse_args()
 
-    focused = focus()
+    focused = focus()  # bounded; also pins the window size so samples compare
     tool("run_command", {"command": "gamemode spectator", "wait_ms": 300})
     x, y, z, yaw, pitch = a.spot.split()
     tool("run_command", {"command": f"tp Dev {x} {y} {z} {yaw} {pitch}", "wait_ms": 300})
     tool("perf")  # subscribes to tick samples
     time.sleep(a.settle)
-    if not focused:
-        focus()
     # Focus is best-effort (the desktop is shared). A read only needs no menu open; with
     # pauseOnLostFocus:false the game keeps rendering unfocused. Focus state is recorded, not required.
     reads, tries, skipped = [], 0, 0

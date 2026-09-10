@@ -21,3 +21,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | ModernFix | 5.27.24 | both | Load time and memory. Client load 58 s to in-game per its own log. Server boot green. |
 | Entity Culling | 1.10.5 | client | Skips rendering entities behind blocks. Neutral at the sample spot (85 entities); matters in machine halls and towns. Ran clean. |
 | ImmediatelyFast | 1.6.13 | client | Batches HUD, text, and entity draw calls. Neutral at the sample spot; helps with EMI panels and dense text. Ran clean. |
+| spark | 1.10.124 | server | Profiler for the 20-chunks-of-machines test. Server boot green; no client change. |
