@@ -5,6 +5,10 @@ file = "config/DistantHorizons.toml"
 hash = "f399afab0497748afa6ad93f8d725ab61e5c002c5d9346071946acf8948dbfdc"
 
 [[files]]
+file = "config/modernfix-mixins.properties"
+hash = "7bc4d86691d27b105babad2faf5ef5fde6f349f9f65a9aacd32d063d01c86b0f"
+
+[[files]]
 file = "kubejs/data/copycats/physics_block_properties/copycat_catwalk.json"
 hash = "2788279d25e02824444aad41e360d501c74472aacac76578ef70a63252ac179f"
 
