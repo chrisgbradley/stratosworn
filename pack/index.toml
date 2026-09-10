@@ -1480,3 +1480,8 @@ metafile = true
 file = "mods/waystones.pw.toml"
 hash = "cac52c97555fa01954361e2b9371cbc03303ccaaf7b964a86b7621b78126103b"
 metafile = true
+
+[[files]]
+file = "mods/zeta.pw.toml"
+hash = "cb474b6c0dde741836ed4f796f3b6ab0b9d3cdc0453e651122cd002d5d1f8df8"
+metafile = true

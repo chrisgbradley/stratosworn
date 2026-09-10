@@ -61,3 +61,4 @@ Versions are the verified 1.21.1 NeoForge builds on Modrinth unless noted.
 | Cold Sweat | 2.4.2 | both | Temperature. Altitude is cold, the High Country travel gate. |
 | Create: Numismatics | 1.1.0 | both | Coins, banks, vendors. The Sky Trade currency layer. |
 | Moonlight | 1.21.1-3.6.4 | both | Library. Supplementaries needs it; packwiz does not resolve it transitively. |
+| Zeta | 1.1-40 | both | Library. Quark needs it; packwiz does not resolve it transitively. |
