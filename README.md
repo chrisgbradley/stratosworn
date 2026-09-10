@@ -19,8 +19,8 @@ Tooling: Java 21, Go (for `go install github.com/packwiz/packwiz@latest`), Pytho
 
 - **Client (Prism):** create a NeoForge 1.21.1 instance and set the pre-launch command to
   `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar -s client <pack URL>/pack.toml`, with
-  `packwiz-installer-bootstrap.jar` in the instance's `.minecraft`. Release URL is published
-  with each tag; for local dev, `scripts/serve.sh` serves this checkout.
+  `packwiz-installer-bootstrap.jar` in the instance's `.minecraft`. The pack URL is
+  `https://raw.githubusercontent.com/chrisgbradley/stratosworn/master/pack/pack.toml`; for local dev, `scripts/serve.sh` serves this checkout instead.
 - **Server:** `server/` is a local NeoForge install for the boot loop (`scripts/boot-server.py`).
   The shipped server pack (Phase 6) installs the same way with `-s server`.
 - **Telemetry mod:** `scripts/build-telemetry.sh` builds it and points the pack at the jar.
@@ -59,7 +59,7 @@ Prism instance `Stratosworn (dev)` installs the pack from this repo on every lau
 scripts/serve.sh
 ```
 
-That runs `packwiz serve` on 8080 and a static server for the dev-only telemetry jar on 8081.
+That runs `packwiz serve` on 8080 so the instance installs this checkout, uncommitted changes included. Machines without the checkout can install from `https://raw.githubusercontent.com/chrisgbradley/stratosworn/master/pack/pack.toml`.
 
 Then launch the instance in Prism. It pulls everything in `pack/index.toml` for the client
 side, including the dev-only telemetry mod (served from `pack/mods/`, never indexed, never

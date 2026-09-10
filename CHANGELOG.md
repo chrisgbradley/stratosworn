@@ -4,6 +4,7 @@ Every mod add, config change, and why. Newest first.
 
 ## 0.1.0 (in progress)
 
+- 2026-09-10: Repo published at github.com/chrisgbradley/stratosworn (public). Telemetry jar hosted as release asset `v0.1.0-dev`; metafile points there, so `serve.sh` only serves the pack now. Clean client install from the raw GitHub URL verified.
 - 2026-09-10: Telemetry metafile is live again: `side="client"`, optional default on, URL `http://localhost:8081/...` served by `scripts/serve.sh` (packwiz serve only serves indexed files, so the jar gets its own static server); the jar sits in `pack/mods/` but is `.packwizignore`d so the index never ships it. Prism instance `Stratosworn (dev)` created outside the repo with `packwiz-installer` as the pre-launch command, 8G G1.
 - 2026-09-10: First spark load test scaffold (`scripts/loadtest.py`): 20 forced chunks, 100 creative motors, ~500 kinetic blocks. Server idle 1.4 ms/tick, loaded 3.2 ms/tick at 20 TPS on the dev box. 148 of 160 bearing contraptions assembled and rotate; the 3.2 ms/tick figure includes them. Airships (Sable physics) still need a hand-built hull. Profiles save to `server/config/spark/*.sparkprofile`; note that spark's `--timeout` auto-uploads to spark.lucko.me, so the script starts the profiler without it.
 - 2026-09-10: `docs/HOST.md` records DS001 (dual Xeon E5-2687W v4, 62 GB, NVMe at /mnt/nvme, AMP). Production JVM: `-Xms12G -Xmx12G` G1 with the Aikar set, instance on the NVMe, optional NUMA pin.
