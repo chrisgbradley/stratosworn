@@ -30,16 +30,16 @@ stop_java client; sleep 2
 bash scripts/client-install.sh 2>&1 | grep -E "Downloaded|Failed|Finished"
 for i in $(seq 1 20); do netstat -an | grep -q ":25590 .*LISTENING" || break; sleep 1; done
 netstat -an | grep -q ":25590 .*LISTENING" && { echo "old client still holds 25590"; exit 3; }
-JOINS_BEFORE=$(grep -c "joined the game" server/logs/latest.log 2>/dev/null || echo 0)
+JOINS_BEFORE=$(grep -c "joined the game" server/logs/latest.log 2>/dev/null); JOINS_BEFORE=${JOINS_BEFORE:-0}
 rm -f telemetry/run/logs/latest.log
 # Detached with every fd redirected, so the game inherits no handle from this script (a held pipe keeps the task alive).
 (cd telemetry && nohup ./gradlew runClientJoin --console=plain > "$TEMP/stratos-client.out" 2> "$TEMP/stratos-client.err" < /dev/null & disown) 2>/dev/null
 for i in $(seq 1 120); do
-  [ "$(grep -c "joined the game" server/logs/latest.log 2>/dev/null || echo 0)" -gt "$JOINS_BEFORE" ] && break
+  n=$(grep -c "joined the game" server/logs/latest.log 2>/dev/null); [ "${n:-0}" -gt "$JOINS_BEFORE" ] && break
   grep -qE "has crashed|Exception in thread \"main\"|BUILD FAILED" telemetry/run/logs/latest.log "$TEMP/stratos-client.out" 2>/dev/null && { echo "CLIENT RED"; grep -m5 -E "has crashed|Exception|Caused by" telemetry/run/logs/latest.log | cut -c1-240; exit 3; }
   sleep 3
 done
-[ "$(grep -c "joined the game" server/logs/latest.log)" -gt "$JOINS_BEFORE" ] || { echo "CLIENT never joined"; tail -5 telemetry/run/logs/latest.log | cut -c1-200; exit 3; }
+n=$(grep -c "joined the game" server/logs/latest.log 2>/dev/null); [ "${n:-0}" -gt "$JOINS_BEFORE" ] || { echo "CLIENT never joined"; tail -5 telemetry/run/logs/latest.log | cut -c1-200; exit 3; }
 echo "== client log errors:"; grep -c "/ERROR]" telemetry/run/logs/latest.log; grep "/ERROR]" telemetry/run/logs/latest.log | head -5 | cut -c1-240
 for i in $(seq 1 30); do netstat -an | grep -q ":25590 .*LISTENING" && break; sleep 2; done
 echo "== perf"; python scripts/perf-sample.py --label "$LABEL" --samples 10

@@ -55,6 +55,11 @@ hash = "e95a7c54f936eda33a548766784f806aef2195204864a79e8535ce132c94e0f1"
 metafile = true
 
 [[files]]
+file = "mods/modernfix.pw.toml"
+hash = "c84140c66f233909b392bd7253ca33c59903ffda51beff558d9a2a4a8c6bc269"
+metafile = true
+
+[[files]]
 file = "mods/sable.pw.toml"
 hash = "a1fa121ed5d0207e4cdd3f545d043f68f9a4bb38dcb21278b968fad5e4cefe4a"
 metafile = true
